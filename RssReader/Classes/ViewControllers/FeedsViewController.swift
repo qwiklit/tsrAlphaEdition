@@ -336,7 +336,7 @@ class FeedsViewController: UITableViewController {
         refreshControl = UIRefreshControl()
         switch ConfigurationManager.defaultTheme() {
             case "dark":
-                refreshControl?.backgroundColor = UIColor(red: 150.0/255.0, green: 60.0/255.0, blue: 15.0/255.0, alpha: 1.0)
+                refreshControl?.backgroundColor = UIColor(red: 0.0/255.0, green: 60.0/0.0, blue: 250.0/255.0, alpha: 1.0)
                 refreshControl?.tintColor = UIColor.whiteColor()
             case "light":
                 refreshControl?.backgroundColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 215.0/255.0, alpha: 1.0)

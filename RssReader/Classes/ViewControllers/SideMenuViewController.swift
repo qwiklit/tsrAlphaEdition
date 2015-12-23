@@ -62,7 +62,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
        tableView.separatorColor = UIColor.clearColor()
 
         if menuTitleLabel != nil {
-            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 18.0)
+            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.5)
         }
         
         currentFeed = self.detailViewController.currentFeeds

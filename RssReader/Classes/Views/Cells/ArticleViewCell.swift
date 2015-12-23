@@ -38,7 +38,7 @@ class ArticleViewCell: UITableViewCell {
     
     func configure() -> Void {
         if ConfigurationManager.defaultCellFont() != "default" {
-            titleLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 15.0)
+            titleLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
             authorLabel.font  = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
             categoryLabel.font  = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
  //          dateTimeLabel.font  = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
