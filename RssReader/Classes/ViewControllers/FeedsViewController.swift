@@ -118,19 +118,20 @@ class FeedsViewController: UITableViewController {
                                             var random = arc4random_uniform(5)
                                             switch(random){
                                                 
-                                            case 0: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold2.imageset/placehold2.png")
+                                            case 0: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
+                                                break
+
+                                                
+                                            case 1: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold2.imageset/placehold2.png")
                                                 break
                                                 
-                                            case 1: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/Van_Gogh_Vincent_The_Langlois_Bridge_at_Arles_with_Women_Washing.imageset/Van_Gogh_Vincent_The_Langlois_Bridge_at_Arles_with_Women_Washing.jpg")
+                                            case 2: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold3.imageset/placehold3.png")
                                                 break
                                                 
-                                            case 2: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold3.imageset/placehold3.png")
+                                            case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold5.imageset/placehold5.png")
                                                 break
                                                 
-                                            case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/moon.imageset/moon.png")
-                                                break
-                                                
-                                            default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold5.imageset/placehold5.png")
+                                            default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
                                         
                                                 break;
                                                 
@@ -140,27 +141,30 @@ class FeedsViewController: UITableViewController {
                                     
                                     //try else
                                   if articleCell.imageViewConstraintWidth != nil {
-                                        do {
+                                    do {
+                                        
+                                        var random = arc4random_uniform(5)
+                                        switch(random){
                                             
-                                            var random = arc4random_uniform(5)
-                                            switch(random){
-                                                
-                                            case 0: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/lights.imageset/lights.png")
-                                                break
-                                                
-                                            case 1: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold2.imageset/placehold2.png")
-                                                break
-                                                
-                                            case 2: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold3.imageset/placehold3.png")
-                                                break
-                                                
-                                            case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/moon.imageset/moon.png")
-                                                break
-                                                
-                                           default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold5.imageset/placehold5.png")
-                                           break;
-                                            }
+                                        case 0: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
+                                            break
                                             
+                                            
+                                        case 1: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold2.imageset/placehold2.png")
+                                            break
+                                            
+                                        case 2: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold3.imageset/placehold3.png")
+                                            break
+                                            
+                                        case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold5.imageset/placehold5.png")
+                                            break
+                                            
+                                        default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
+                                        
+                                        break;
+                                            
+                                        }
+                                        
                                         }
                                     }
                                     
@@ -180,36 +184,39 @@ class FeedsViewController: UITableViewController {
                     
                    if articleCell.headerImageView.image != nil {
                        
-                        do {
+                    do {
+                        
+                        var random = arc4random_uniform(5)
+                        switch(random){
                             
-                            var random = arc4random_uniform(5)
-                            switch(random){
-                                
-                            case 0: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/lights.imageset/lights.png")
-                                break
-                                
-                            case 1: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold2.imageset/placehold2.png")
-                                break
-                                
-                            case 2: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold3.imageset/placehold3.png")
-                                break
-                                
-                            case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/moon.imageset/moon.png")
-                                break
-                                
-                       default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/placehold5.imageset/placehold5.png")
-                            break;
-                            }
+                        case 0: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
+                            break
                             
+                            
+                        case 1: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold2.imageset/placehold2.png")
+                            break
+                            
+                        case 2: articleCell.headerImageView.image = UIImage(named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold3.imageset/placehold3.png")
+                            break
+                            
+                        case 3: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold5.imageset/placehold5.png")
+                            break
+                            
+                        default: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/ASSETS/Media.xcassets/placehold1.imageset/placehold1.png")
+                        
+                        break;
+                            
+                        }
+                        
                         }
                     }
                     
    //                 if articleCell.imageViewConstraintWidth != nil {
        //                 do {
-                            
+                    
       //                      var random = arc4random_uniform(5)
        //                     switch(random){
-                                
+                    
        //                     case 0: articleCell.headerImageView.image = UIImage (named: "/Users/philjames/Downloads/TapestryFirstDraft/Third Iteration/RssReader/Images.xcassets/fab2.imageset/fab2.png")
          //                       break
                                 
@@ -333,7 +340,7 @@ class FeedsViewController: UITableViewController {
         refreshControl = UIRefreshControl()
         switch ConfigurationManager.defaultTheme() {
             case "dark":
-                refreshControl?.backgroundColor = UIColor(red: 166.0/255.0, green: 150.0/255.0, blue: 15.0/255.0, alpha: 1.0)
+                refreshControl?.backgroundColor = UIColor(red: 166.0/255.0, green: 100.0/255.0, blue: 15.0/255.0, alpha: 1.0)
                 refreshControl?.tintColor = UIColor.whiteColor()
             case "light":
                 refreshControl?.backgroundColor = UIColor(red: 166.0/255.0, green: 37.0/255.0, blue: 15.0/255.0, alpha: 1.0)
