@@ -118,7 +118,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
         }
 
         cell?.textLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.0)
-        cell?.imageView?.image = UIImage(named: "nav_radio")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        cell?.imageView?.image = UIImage(named: "book104")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
         // Highlight the selected category
         if ConfigurationManager.defaultTheme() == "light" {
