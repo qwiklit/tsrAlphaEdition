@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Theme</key>
+	<string>dark</string>
+	<key>DropdownMenu</key>
+	<false/>
+	<key>HomeScreenAdsEnabled</key>
+	<false/>
+	<key>DetailViewAdsEnabled</key>
+	<false/>
+	<key>DefaultBarFont</key>
+	<string>Varela-Regular</string>
+	<key>DefaultCellFont</key>
+	<string>Raleway</string>
+	<key>DisplayMode</key>
+	<string>Image</string>
+	<key>Feeds</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Tapestry Story Reader</string>
+			<key>url</key>
+			<string>http://mix.chimpfeedr.com/24306-TapestryDecember21</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Short Stories and Poetry</string>
+			<key>url</key>
+			<string>CategoryFeed</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>News &amp; Reviews</string>
+			<key>url</key>
+			<string>CategoryFeed</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nonfiction</string>
+			<key>url</key>
+			<string>CategoryFeed</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Science Fiction</string>
+			<key>url</key>
+			<string>CategoryFeed</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Humor</string>
+			<key>url</key>
+			<string>CategoryFeed</string>
+		</dict>
+	</array>
+	<key>CategoryFeeds</key>
+	<dict>
+		<key>Short Stories and Poetry</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Wordhaus</string>
+				<key>url</key>
+				<string>http://www.wordhaus.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The American Reader</string>
+				<key>url</key>
+				<string>http://theamericanreader.com/category/online/fiction-and-poetry/feed/</string>
+				<key>submit</key>
+				<string>https://theamericanscholar.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>American Short Fiction</string>
+				<key>url</key>
+				<string>http://americanshortfiction.org/category/web-exclusives/feed/</string>
+				<key>submit</key>
+				<string>https://americanshortfiction.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Anthill</string>
+				<key>url</key>
+				<string>http://theanthill.org/rss.xml</string>
+				<key>submit</key>
+				<string>https://atticusbooks.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Atticus Review</string>
+				<key>url</key>
+				<string>http://atticusreview.org/feed/</string>
+				<key>submit</key>
+				<string>https://atticusbooks.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Autumn Sky Daily Poetry</string>
+				<key>url</key>
+				<string>http://autumnskypoetrydaily.com/feed/</string>
+				<key>submit</key>
+				<string>http://autumnskypoetrydaily.com/submission-guidelines/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Augury Books</string>
+				<key>url</key>
+				<string>http://augurybooks.com/feed/</string>
+				<key>submit</key>
+				<string>https://augurybooks.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Buenos Aires Review</string>
+				<key>url</key>
+				<string>http://www.buenosairesreview.org/feed/</string>
+				<key>submit</key>
+				<string>https://buenosairesreview.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Carve </string>
+				<key>url</key>
+				<string>http://www.carvezine.com/story?format=RSS</string>
+				<key>submit</key>
+				<string>https://carve.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Chelsea Station</string>
+				<key>url</key>
+				<string>http://www.chelseastationmagazine.com/atom.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CrazyHorse</string>
+				<key>url</key>
+				<string>http://crazyhorse.cofc.edu/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Dead Mule</string>
+				<key>url</key>
+				<string>http://www.deadmule.com/feed</string>
+				<key>submit</key>
+				<string>https://deadmule.submittable.com/submit/2343</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>EcholocationMag</string>
+				<key>url</key>
+				<string>http://echolocationmag.com/?feed=rss2</string>
+				<key>submit</key>
+				<string>https://echolocationmag.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Eighteen Bridges</string>
+				<key>url</key>
+				<string>http://eighteenbridges.com/edition/short-reads/feed/</string>
+				<key>submit</key>
+				<string>http://eighteenbridges.com/submission-guidelines/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Electric Literature</string>
+				<key>url</key>
+				<string>http://electricliterature.com/category/okey-panky/feed/</string>
+				<key>submit</key>
+				<string>https://electricliterature.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Escape Pod</string>
+				<key>url</key>
+				<string>http://escapepod.org/feed/</string>
+				<key>submit</key>
+				<string>https://escapepod.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Feather Tale</string>
+				<key>url</key>
+				<string>http://feathertale.com/category/short-fiction/feed/</string>
+				<key>submit</key>
+				<string>http://feathertale.com/submissions/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fiction Southeast</string>
+				<key>url</key>
+				<string>http://fictionsoutheast.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Geist</string>
+				<key>url</key>
+				<string>http://www.geist.com/fiction/index.rss</string>
+				<key>submit</key>
+				<string>https://geist.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Hazlitt</string>
+				<key>url</key>
+				<string>http://hazlitt.net/rss.xml</string>
+				<key>submit</key>
+				<string>https://hazlitt.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Hudson Review</string>
+				<key>url</key>
+				<string>http://hudsonreview.com/feed/</string>
+				<key>submit</key>
+				<string>http://www.michiganquarterlyreview.com/submissions/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Idaho Review</string>
+				<key>url</key>
+				<string>http://idahoreview.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Journal of Bison Jack</string>
+				<key>url</key>
+				<string>http://thejournalofbisonjack.tumblr.com/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Lithub</string>
+				<key>url</key>
+				<string>http://lithub.com/category/excerpts/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Made-Up Words</string>
+				<key>url</key>
+				<string>https://medium.com/feed/made-up-words</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>McSweeney&apos;s</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/mcsweeneys/</string>
+				<key>submit</key>
+				<string>https://mcsweeneysquarterly.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Michigan Quarterly Review</string>
+				<key>url</key>
+				<string>http://www.michiganquarterlyreview.com/feed/</string>
+				<key>submit</key>
+				<string>http://www.michiganquarterlyreview.com/submissions/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Necessary Fiction</string>
+				<key>url</key>
+				<string>http://www.necessaryfiction.com/atom</string>
+				<key>submit</key>
+				<string>https://necessaryfiction.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The New Yorker</string>
+				<key>url</key>
+				<string>http://www.newyorker.com/services/rss/feeds/fiction.xml</string>
+				<key>submit</key>
+				<string>https://newyorker.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Offing</string>
+				<key>url</key>
+				<string>http://theoffingmag.com/feed/</string>
+				<key>submit</key>
+				<string>https://theoffingmag.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Paris Review</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/TheParisReviewBlog</string>
+				<key>submit</key>
+				<string>http://www.theparisreview.org/about/submissions</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PEN</string>
+				<key>url</key>
+				<string>http://www.pen.org/rss.xml</string>
+				<key>submit</key>
+				<string>https://pen.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Ploughshares</string>
+				<key>url</key>
+				<string>https://www.pshares.org/rss.xml</string>
+				<key>submit</key>
+				<string>https://www.pshares.org/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Poetic Entanglement</string>
+				<key>url</key>
+				<string>http://www.poeticentanglement.com/feed/</string>
+				<key>submit</key>
+				<string>https://deadwhitemenanthology.submittable.com/submit/15555</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Poetry is Dead</string>
+				<key>url</key>
+				<string>http://www.poetryisdead.ca/rss.xml</string>
+				<key>submit</key>
+				<string>https://poetryisdeadmagazine.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Poetry Northwest</string>
+				<key>url</key>
+				<string>http://www.poetrynw.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Public Books</string>
+				<key>url</key>
+				<string>http://www.publicbooks.org/rss</string>
+				<key>submit</key>
+				<string>https://apublicspacedemo.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Purple Passion Press</string>
+				<key>url</key>
+				<string>http://purplepassionpress.com/feed/</string>
+				<key>submit</key>
+				<string>https://purplepassionpress.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Quaint Magazine</string>
+				<key>url</key>
+				<string>http://quaintmagazine.com/feed/</string>
+				<key>submit</key>
+				<string>https://quaintmagazine.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Rusty Toque</string>
+				<key>url</key>
+				<string>http://therustytoque.tumblr.com/rss</string>
+				<key>submit</key>
+				<string>https://therustytoque.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Queen Mobs</string>
+				<key>url</key>
+				<string>http://queenmobs.com/category/fiction/feed/</string>
+				<key>submit</key>
+				<string>http://queenmobs.com/submissions/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Shenandoah</string>
+				<key>url</key>
+				<string>http://shenandoahliterary.org/feed/</string>
+				<key>submit</key>
+				<string>https://shenandoah.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Short Fiction Break</string>
+				<key>url</key>
+				<string>http://shortfictionbreak.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Sun Magazine</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/thesunmagazine/xlGm</string>
+				<key>submit</key>
+				<string>http://thesunmagazine.org/about/submission_guidelines/writing</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>3am Magazine</string>
+				<key>url</key>
+				<string>http://www.3ammagazine.com/3am/index/fiction/feed/</string>
+				<key>submit</key>
+				<string>http://www.3ammagazine.com/3am/submissions/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tor</string>
+				<key>url</key>
+				<string>http://www.tor.com/category/all-fiction/feed/</string>
+				<key>submit</key>
+				<string>http://submissions.tor.com/tororiginals/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Triquarterly</string>
+				<key>url</key>
+				<string>http://www.triquarterly.org/rss.xml</string>
+				<key>submit</key>
+				<string>https://triquarterly.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Walrus</string>
+				<key>url</key>
+				<string>http://thewalrus.ca/category/fiction/feed/</string>
+				<key>submit</key>
+				<string>https://thewalrus.ca/submission-guidelines/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Witness </string>
+				<key>url</key>
+				<string>http://witness.blackmountaininstitute.org/feed/</string>
+				<key>submit</key>
+				<string>http://witness.blackmountaininstitute.org/submit/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Words Without Borders</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/wwborders</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Writer&apos;s Almanac</string>
+				<key>url</key>
+				<string>http://feeds.americanpublicmedia.org/writersalmanac</string>
+			</dict>
+		</array>
+		<key>Nonfiction</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>The American Scholar</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/theamericanscholar/yaSQ</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Barking</string>
+				<key>url</key>
+				<string>http://thebarking.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Awl</string>
+				<key>url</key>
+				<string>http://feeds2.feedburner.com/TheAwl</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Believer Mag</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/believermag</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Brain Pickings</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/brainpickings/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Conversational Reading</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/ConversationalReading</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Full Stop</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/fullstopmag</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>GUTS Magazine</string>
+				<key>url</key>
+				<string>http://gutsmagazine.ca/feed</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Harper&apos;s </string>
+				<key>url</key>
+				<string>http://harpers.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Moth</string>
+				<key>url</key>
+				<string>http://feeds.themoth.org/themothpodcast</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Kenyon Review</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/KrBlog</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Narrative Magazine</string>
+				<key>url</key>
+				<string>http://www.narrativemagazine.com/rss.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The New Yorker</string>
+				<key>url</key>
+				<string>http://www.newyorker.com/feed/articles</string>
+			</dict>
+		</array>
+		<key>Science Fiction</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Escape Pod</string>
+				<key>url</key>
+				<string>http://escapepod.org/feed/</string>
+				<key>submit</key>
+				<string>https://escapepod.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Lightspeed Magazine</string>
+				<key>url</key>
+				<string>http://www.lightspeedmagazine.com/rss-2/</string>
+				<key>submit</key>
+				<string>http://www.lightspeedmagazine.com/about/guidelines//</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Shimmer Magazine</string>
+				<key>url</key>
+				<string>http://www.shimmerzine.com/feed/</string>
+				<key>submit</key>
+				<string>http://www.shimmerzine.com/guidelines/fiction-guidelines/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tor</string>
+				<key>url</key>
+				<string>http://www.tor.com/category/all-fiction/feed/</string>
+				<key>submit</key>
+				<string>http://submissions.tor.com/tororiginals/</string>
+			</dict>
+		</array>
+		<key>Authors</key>
+		<array>
+			<dict>
+				<key>New item</key>
+				<string></string>
+				<key>name</key>
+				<string>Dallas Clayton</string>
+				<key>url</key>
+				<string>http://blog.dallasclayton.com/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tyler Knott Greggson</string>
+				<key>url</key>
+				<string>http://tylerknott.com/rss</string>
+			</dict>
+			<dict>
+				<key>New item</key>
+				<string></string>
+				<key>name</key>
+				<string>Stephen King</string>
+				<key>url</key>
+				<string>http://stephenking.com/stephenking-rss.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cory Doctorow</string>
+				<key>url</key>
+				<string>http://craphound.com/feed/</string>
+			</dict>
+		</array>
+		<key>Humor</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>McSweeney&apos;s</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/mcsweeneys/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Best Page in the Universe</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/TheBestPageInTheUniverse</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Onion</string>
+				<key>url</key>
+				<string>http://www.theonion.com/feeds/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Clickhole</string>
+				<key>url</key>
+				<string>http://www.clickhole.com/feeds/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Beaverton</string>
+				<key>url</key>
+				<string>http://www.thebeaverton.com/?format=feed&amp;type=rss</string>
+			</dict>
+		</array>
+		<key>News &amp; Reviews</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Book Riot</string>
+				<key>url</key>
+				<string>http://bookriot.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Ecotone</string>
+				<key>url</key>
+				<string>http://ecotonelookout.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Electric Literature</string>
+				<key>url</key>
+				<string>http://electricliterature.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Flavorwire</string>
+				<key>url</key>
+				<string>http://flavorwire.com/category/books/feed</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Galleycat</string>
+				<key>url</key>
+				<string>http://www.adweek.com/galleycat/feed</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Globe and Mail Books</string>
+				<key>url</key>
+				<string>http://www.theglobeandmail.com/arts/books-and-media/?service=rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Guardian</string>
+				<key>url</key>
+				<string>http://www.theguardian.com/books/rss</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Kirkus Reviews</string>
+				<key>url</key>
+				<string>https://www.kirkusreviews.com/feeds/rss/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>LA Times Books</string>
+				<key>url</key>
+				<string>http://www.latimes.com/books/rss2.0.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Lithub</string>
+				<key>url</key>
+				<string>http://lithub.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>London Review of Books</string>
+				<key>url</key>
+				<string>http://cdn.lrb.co.uk/feeds/lrb</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Millions</string>
+				<key>url</key>
+				<string>http://www.themillions.com/feed</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>New York Review of Books</string>
+				<key>url</key>
+				<string>http://feeds.feedburner.com/nybooks</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>New York Times Books</string>
+				<key>url</key>
+				<string>http://rss.nytimes.com/services/xml/rss/nyt/Books.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>NPR Books</string>
+				<key>url</key>
+				<string>http://www.npr.org/rss/rss.php?id=1032</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Omnivoracious</string>
+				<key>url</key>
+				<string>http://www.omnivoracious.com/rss.xml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>World Literature Today</string>
+				<key>url</key>
+				<string>http://www.worldliteraturetoday.org/feeds/blog</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Zyzzyva</string>
+				<key>url</key>
+				<string>http://www.zyzzyva.org/feed/</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
