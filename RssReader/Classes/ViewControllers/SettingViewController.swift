@@ -74,6 +74,11 @@ class SettingViewController: UITableViewController, MFMailComposeViewControllerD
 
     }
     
+
+    
+
+    
+    
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

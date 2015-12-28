@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2DFF569EE4F50D1DCCEB1E33B303CAB53D720716",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2DFF569EE4F50D1DCCEB1E33B303CAB53D720716" : 0,
+    "B49F310B38FAB5B30388318ECD5A9419BF307D93" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "64CE5E54-DE51-4879-8C1A-DCFBF5AEAC3C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2DFF569EE4F50D1DCCEB1E33B303CAB53D720716" : "Third%20Iteration\/",
+    "B49F310B38FAB5B30388318ECD5A9419BF307D93" : "rssreader"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RssReader",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RssReader.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/qwiklit\/tsrAlphaEdition.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2DFF569EE4F50D1DCCEB1E33B303CAB53D720716"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.skitsko.com:XBeg9\/rssreader.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B49F310B38FAB5B30388318ECD5A9419BF307D93"
+    }
+  ]
+}

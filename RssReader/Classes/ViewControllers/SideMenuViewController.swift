@@ -54,12 +54,12 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = view.bounds
-            tableView.backgroundView?.addSubview(blurEffectView)
+           tableView.backgroundView?.addSubview(blurEffectView)
             tableView.separatorColor = UIColor.blackColor()
         }
         
-        tableView.separatorColor = UIColor(white: 0.15, alpha: 0.2)
-       tableView.separatorColor = UIColor.clearColor()
+        tableView.separatorColor = UIColor(white: 0.15, alpha: 0.6)
+       tableView.separatorColor = UIColor.blackColor()
 
         if menuTitleLabel != nil {
             menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.5)

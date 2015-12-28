@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		529C23F5E78CFFB0EE27F533 /* FeedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C25CF9189D4D59280A0B5 /* FeedsService.swift */; };
 		C25AC3EA4D734E4491A46FC9 /* libPods-RssReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A86EFB9989445B9BE59D6AA /* libPods-RssReader.a */; };
+		EB042F7C1C31097400B78ADD /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB042F7B1C31097400B78ADD /* DiscoverView.swift */; };
 		EB0AC83F1C238C0800A58897 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0AC83E1C238C0800A58897 /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F219FD0F1A21D2680028EF72 /* DropdownMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219FD0E1A21D2680028EF72 /* DropdownMenuItem.swift */; };
 		F253771F1A1E149D008B1171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253771E1A1E149D008B1171 /* AppDelegate.swift */; };
@@ -83,10 +84,11 @@
 		3A86EFB9989445B9BE59D6AA /* libPods-RssReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RssReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		529C25CF9189D4D59280A0B5 /* FeedsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsService.swift; sourceTree = "<group>"; };
 		96BF58AB28FFAC8B75FF5A25 /* Pods-RssReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-RssReader/Pods-RssReader.release.xcconfig"; sourceTree = "<group>"; };
+		EB042F7B1C31097400B78ADD /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		EB0AC83E1C238C0800A58897 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		EB88B3DE1C2B1F620042C82B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F219FD0E1A21D2680028EF72 /* DropdownMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuItem.swift; path = ../DropdownMenuItem.swift; sourceTree = "<group>"; };
-		F25377191A1E149D008B1171 /* RssReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25377191A1E149D008B1171 /* Tapestry .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tapestry .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F253771D1A1E149D008B1171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F253771E1A1E149D008B1171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25377231A1E149D008B1171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -228,7 +230,7 @@
 		F253771A1A1E149D008B1171 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F25377191A1E149D008B1171 /* RssReader.app */,
+				F25377191A1E149D008B1171 /* Tapestry .app */,
 				F253772E1A1E149D008B1171 /* RssReaderTests.xctest */,
 			);
 			name = Products;
@@ -467,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A8D21C1A24E317002B259E /* DetailArticleViewController.swift */,
+				EB042F7B1C31097400B78ADD /* DiscoverView.swift */,
 				F4B820AD1A31BDB000A1E002 /* SettingViewController.swift */,
 				F4829C351BE210FE007570D0 /* SectionHeaderView.swift */,
 				F480D98E1B412DB400F0317E /* FlatColor.swift */,
@@ -510,7 +513,7 @@
 			);
 			name = RssReader;
 			productName = RssReader;
-			productReference = F25377191A1E149D008B1171 /* RssReader.app */;
+			productReference = F25377191A1E149D008B1171 /* Tapestry .app */;
 			productType = "com.apple.product-type.application";
 		};
 		F253772D1A1E149D008B1171 /* RssReaderTests */ = {
@@ -692,6 +695,7 @@
 				529C23F5E78CFFB0EE27F533 /* FeedsService.swift in Sources */,
 				F4B0EF401B33AEB90007AA5A /* CacheManager.swift in Sources */,
 				F26505C01A2331D200A066A5 /* SideMenuViewController.swift in Sources */,
+				EB042F7C1C31097400B78ADD /* DiscoverView.swift in Sources */,
 				F43DFE341B20366C008C7792 /* ArticleListDescriptionCell.swift in Sources */,
 				F4E173D51AF759EB00E9B99E /* SlideUpTransitionAnimator.swift in Sources */,
 			);
@@ -857,7 +861,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.storyreader;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tapestry ";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/RssReader-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RssReader/SupportingFiles/RssReader-Bridging-Header.h";
@@ -891,7 +895,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.storyreader;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tapestry ";
 				PROVISIONING_PROFILE = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RssReader/SupportingFiles/RssReader-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
