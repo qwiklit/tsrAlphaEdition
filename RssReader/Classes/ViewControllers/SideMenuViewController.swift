@@ -51,10 +51,10 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
         } else if ConfigurationManager.defaultTheme().lowercaseString == "dark" {
             tableView.backgroundColor = UIColor.clearColor()
             tableView.backgroundView = UIImageView(image: UIImage(named: "sidebackground"))
-            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
-            let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            blurEffectView.frame = view.bounds
-           tableView.backgroundView?.addSubview(blurEffectView)
+       //     let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
+       //     let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        //    blurEffectView.frame = view.bounds
+       //    tableView.backgroundView?.addSubview(blurEffectView)
             tableView.separatorColor = UIColor.blackColor()
         }
         
@@ -62,7 +62,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
        tableView.separatorColor = UIColor.blackColor()
 
         if menuTitleLabel != nil {
-            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.5)
+            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 10.5)
         }
         
         currentFeed = self.detailViewController.currentFeeds
@@ -117,7 +117,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
             cell?.textLabel?.text = categoryFeeds?[indexPath.row]["name"]
         }
 
-        cell?.textLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.0)
+        cell?.textLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 12.0)
         cell?.imageView?.image = UIImage(named: "book104")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
         // Highlight the selected category
@@ -164,7 +164,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
         
         let headerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier("SidebarSectionHeaderView") as! SectionHeaderView
         
-        headerView.titleButton.titleLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 19.0)
+        headerView.titleButton.titleLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 18.0)
         headerView.titleButton.setTitle(feedsURLs[section]["name"], forState: UIControlState.Normal)
         headerView.sectionID = section
         headerView.delegate = self
@@ -173,7 +173,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
             let titleColor = (headerView.titleButton.titleLabel?.text == currentFeed?.title) ? UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0) : UIColor(white: 0.8, alpha: 0.9)
             headerView.titleButton.setTitleColor(titleColor, forState: UIControlState.Normal)
         } else if ConfigurationManager.defaultTheme() == "dark" {
-            let titleColor = (headerView.titleButton.titleLabel?.text == currentFeed?.title) ? UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0) : UIColor.blackColor()
+            let titleColor = (headerView.titleButton.titleLabel?.text == currentFeed?.title) ? UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.8) : UIColor.blackColor()
             headerView.titleButton.setTitleColor(titleColor, forState: UIControlState.Normal)
         }
         

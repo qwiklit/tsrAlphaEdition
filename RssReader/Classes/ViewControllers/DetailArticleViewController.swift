@@ -76,17 +76,17 @@ class DetailArticleViewController: UIViewController, UIWebViewDelegate, UIScroll
     
     // Action method for activating the share actions
     
-//    @IBAction func shareToFacebook() {
-//        let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType:SLServiceTypeFacebook)
+    @IBAction func shareToFacebook() {
+        let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType:SLServiceTypeFacebook)
         
-//            self.presentViewController(shareToFacebook, animated: true, completion: nil)
- //   }
+            self.presentViewController(shareToFacebook, animated: true, completion: nil)
+    }
     
-//    @IBAction func shareToTwitter() {
- //       let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+   @IBAction func shareToTwitter() {
+        let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         
-  //      self.presentViewController(shareToTwitter, animated: true, completion: nil)
-//    }
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
+   }
     
     
     @IBAction func shareAction(sender: UIBarButtonItem) {

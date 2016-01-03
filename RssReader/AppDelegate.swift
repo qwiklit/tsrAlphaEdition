@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
                 // Configure the default fonts
-                UILabel.appearance().font = ConfigurationManager.defaultCellFont() != "default" ? UIFont(name: "Varela-Regular", size: 16.5) : UIFont(name: ConfigurationManager.defaultCellFont(), size: 16.5)
+                UILabel.appearance().font = ConfigurationManager.defaultCellFont() != "default" ? UIFont(name: "Varela-Regular", size: 15.5) : UIFont(name: ConfigurationManager.defaultCellFont(), size: 15.5)
             }
         }
         

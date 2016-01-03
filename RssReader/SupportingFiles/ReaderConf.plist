@@ -61,9 +61,9 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>Wordhaus</string>
+				<string>All Short Fiction</string>
 				<key>url</key>
-				<string>http://www.wordhaus.com/feed/</string>
+				<string>http://mix.chimpfeedr.com/24306-TapestryDecember21</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -433,6 +433,12 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Wordhaus</string>
+				<key>url</key>
+				<string>http://www.wordhaus.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Words Without Borders</string>
 				<key>url</key>
 				<string>http://feeds.feedburner.com/wwborders</string>
@@ -446,6 +452,12 @@
 		</array>
 		<key>Nonfiction</key>
 		<array>
+			<dict>
+				<key>name</key>
+				<string>All Nonfiction</string>
+				<key>url</key>
+				<string>http://mix.chimpfeedr.com/16fc5-Tapestrynonfiction</string>
+			</dict>
 			<dict>
 				<key>name</key>
 				<string>The American Scholar</string>
@@ -628,6 +640,12 @@
 		<array>
 			<dict>
 				<key>name</key>
+				<string>All News and Reviews</string>
+				<key>url</key>
+				<string>http://mix.chimpfeedr.com/80ded-TapestryNewsandReviews</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Book Riot</string>
 				<key>url</key>
 				<string>http://bookriot.com/feed/</string>
@@ -724,9 +742,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>World Literature Today</string>
+				<string>Toronto Star Books</string>
 				<key>url</key>
-				<string>http://www.worldliteraturetoday.org/feeds/blog</string>
+				<string>http://www.thestar.com/feeds.articles.entertainment.books.rss</string>
 			</dict>
 			<dict>
 				<key>name</key>
