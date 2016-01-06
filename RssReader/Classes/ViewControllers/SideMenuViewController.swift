@@ -62,7 +62,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
        tableView.separatorColor = UIColor.blackColor()
 
         if menuTitleLabel != nil {
-            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 10.5)
+            menuTitleLabel.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 14.5)
         }
         
         currentFeed = self.detailViewController.currentFeeds
@@ -117,7 +117,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
             cell?.textLabel?.text = categoryFeeds?[indexPath.row]["name"]
         }
 
-        cell?.textLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 12.0)
+        cell?.textLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 14.0)
         cell?.imageView?.image = UIImage(named: "book104")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
         // Highlight the selected category
@@ -164,7 +164,7 @@ class SideMenuViewController: UITableViewController, SectionHeaderViewDelegate {
         
         let headerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier("SidebarSectionHeaderView") as! SectionHeaderView
         
-        headerView.titleButton.titleLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 18.0)
+        headerView.titleButton.titleLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.5)
         headerView.titleButton.setTitle(feedsURLs[section]["name"], forState: UIControlState.Normal)
         headerView.sectionID = section
         headerView.delegate = self

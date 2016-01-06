@@ -200,7 +200,7 @@ class DiscoverView: UITableViewController {
     //CarveZine
     
     @IBAction func CarveFacebook(sender: AnyObject) {
-        if let url = NSURL(string: "http://www.facebook.com/carvezine/") {
+        if let url = NSURL(string: "http://www.facebook.com/carvezine") {
             UIApplication.sharedApplication().openURL(url)
         }
     }

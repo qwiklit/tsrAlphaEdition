@@ -11,7 +11,7 @@
 	<key>DetailViewAdsEnabled</key>
 	<false/>
 	<key>DefaultBarFont</key>
-	<string>Varela-Regular</string>
+	<string>Varela</string>
 	<key>DefaultCellFont</key>
 	<string>Raleway</string>
 	<key>DisplayMode</key>
@@ -115,6 +115,12 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Blue Mesa Review</string>
+				<key>url</key>
+				<string>http://bluemesareview.org/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Buenos Aires Review</string>
 				<key>url</key>
 				<string>http://www.buenosairesreview.org/feed/</string>
@@ -202,6 +208,12 @@
 				<string>http://www.geist.com/fiction/index.rss</string>
 				<key>submit</key>
 				<string>https://geist.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Hayden&apos;s Ferry Review</string>
+				<key>url</key>
+				<string>http://haydensferryreview.com/haydensferryreview?format=RSS</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -301,14 +313,6 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Ploughshares</string>
-				<key>url</key>
-				<string>https://www.pshares.org/rss.xml</string>
-				<key>submit</key>
-				<string>https://www.pshares.org/submit</string>
-			</dict>
-			<dict>
-				<key>name</key>
 				<string>Poetic Entanglement</string>
 				<key>url</key>
 				<string>http://www.poeticentanglement.com/feed/</string>
@@ -322,12 +326,6 @@
 				<string>http://www.poetryisdead.ca/rss.xml</string>
 				<key>submit</key>
 				<string>https://poetryisdeadmagazine.submittable.com/submit</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Poetry Northwest</string>
-				<key>url</key>
-				<string>http://www.poetrynw.org/feed/</string>
 			</dict>
 			<dict>
 				<key>name</key>

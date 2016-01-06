@@ -65,8 +65,6 @@
         <!--Discover-->
         <scene sceneID="EOK-Zc-soA">
             <objects>
-                <exit id="LlU-aI-WIp" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I8V-JN-9Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="mPn-mU-XcN" customClass="DiscoverView" customModule="Tapestry_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="zrX-pP-DhU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -556,12 +554,18 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clp-eQ-osg">
                                                     <rect key="frame" x="276" y="95" width="48" height="56"/>
                                                     <state key="normal" image="Facebook"/>
+                                                    <connections>
+                                                        <action selector="CarveFacebook:" destination="mPn-mU-XcN" eventType="touchUpInside" id="RoU-NK-j7V"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZh-z4-5rn">
                                                     <rect key="frame" x="47" y="54" width="506" height="30"/>
                                                     <state key="normal" title="www.carvezine.com">
                                                         <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="CarveURL:" destination="mPn-mU-XcN" eventType="touchUpInside" id="NDd-hu-0c5"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zW-E6-yct">
                                                     <rect key="frame" x="47" y="29" width="506" height="17"/>
@@ -572,10 +576,16 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnq-HP-9GF">
                                                     <rect key="frame" x="394" y="94" width="48" height="57"/>
                                                     <state key="normal" image="Twitter"/>
+                                                    <connections>
+                                                        <action selector="CarveTwitter:" destination="mPn-mU-XcN" eventType="touchUpInside" id="ob7-T2-eZv"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTr-3i-tSB">
                                                     <rect key="frame" x="158" y="87" width="64" height="64"/>
                                                     <state key="normal" image="upload33"/>
+                                                    <connections>
+                                                        <action selector="CarveSubmission:" destination="mPn-mU-XcN" eventType="touchUpInside" id="Rkr-LS-Sel"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -812,12 +822,18 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyQ-5Y-RyZ">
                                                     <rect key="frame" x="276" y="95" width="48" height="56"/>
                                                     <state key="normal" image="Facebook"/>
+                                                    <connections>
+                                                        <action selector="EcholocationFacebook:" destination="mPn-mU-XcN" eventType="touchUpInside" id="nSV-AA-e7j"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMh-HN-m4N">
                                                     <rect key="frame" x="47" y="54" width="506" height="30"/>
                                                     <state key="normal" title="www.echolocationmag.com">
                                                         <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="EcholocationURL:" destination="mPn-mU-XcN" eventType="touchUpInside" id="ee8-Br-WYD"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Echolocation Mag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-7U-ckY">
                                                     <rect key="frame" x="47" y="29" width="506" height="17"/>
@@ -832,6 +848,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERo-vp-8QB">
                                                     <rect key="frame" x="158" y="87" width="64" height="64"/>
                                                     <state key="normal" image="upload33"/>
+                                                    <connections>
+                                                        <action selector="EcholocationTwitter:" destination="mPn-mU-XcN" eventType="touchUpInside" id="bu7-Oh-Mnc"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -868,7 +887,7 @@
                                                     <rect key="frame" x="276" y="95" width="48" height="56"/>
                                                     <state key="normal" image="Facebook"/>
                                                     <connections>
-                                                        <action selector="EighteenbridgeFacebook:" destination="mPn-mU-XcN" eventType="touchUpInside" id="tIr-kh-vh0"/>
+                                                        <action selector="EighteenbridgeFacebook:" destination="mPn-mU-XcN" eventType="touchUpInside" id="1mz-6h-RsB"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpx-x3-XNi">
@@ -877,7 +896,7 @@
                                                         <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="EighteenbridgeURL:" destination="mPn-mU-XcN" eventType="touchUpInside" id="5uS-Hg-qGf"/>
+                                                        <action selector="EighteenbridgeURL:" destination="mPn-mU-XcN" eventType="touchUpInside" id="thD-BS-Wla"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eighteen Bridges " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK2-JK-YA7">
@@ -890,14 +909,14 @@
                                                     <rect key="frame" x="394" y="94" width="48" height="57"/>
                                                     <state key="normal" image="Twitter"/>
                                                     <connections>
-                                                        <action selector="EighteenbridgeTwitter:" destination="mPn-mU-XcN" eventType="touchUpInside" id="I74-d5-Pch"/>
+                                                        <action selector="EighteenbridgeTwitter:" destination="mPn-mU-XcN" eventType="touchUpInside" id="jYk-2c-FdD"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-Pt-cjx">
                                                     <rect key="frame" x="158" y="87" width="64" height="64"/>
                                                     <state key="normal" image="upload33"/>
                                                     <connections>
-                                                        <action selector="EighteenbridgeSubmission:" destination="mPn-mU-XcN" eventType="touchUpInside" id="leL-rh-0Xf"/>
+                                                        <action selector="EighteenbridgeSubmission:" destination="mPn-mU-XcN" eventType="touchUpInside" id="Xnh-DP-rGB"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -934,12 +953,18 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cna-q3-fPB">
                                                     <rect key="frame" x="276" y="95" width="48" height="56"/>
                                                     <state key="normal" image="Facebook"/>
+                                                    <connections>
+                                                        <action selector="ElectricFacebook:" destination="mPn-mU-XcN" eventType="touchUpInside" id="f5p-AY-AIF"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-2r-hPd">
                                                     <rect key="frame" x="47" y="54" width="506" height="30"/>
                                                     <state key="normal" title="www.electricliterature.com">
                                                         <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="ElectricbridgeURL:" destination="mPn-mU-XcN" eventType="touchUpInside" id="oaA-NI-xi3"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electric Literature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1K-eB-Kx8">
                                                     <rect key="frame" x="47" y="29" width="506" height="17"/>
@@ -950,10 +975,16 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdV-D2-klH">
                                                     <rect key="frame" x="394" y="94" width="48" height="57"/>
                                                     <state key="normal" image="Twitter"/>
+                                                    <connections>
+                                                        <action selector="ElectricbridgeTwitter:" destination="mPn-mU-XcN" eventType="touchUpInside" id="N8x-xv-UEC"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeW-8K-c9s">
                                                     <rect key="frame" x="158" y="87" width="64" height="64"/>
                                                     <state key="normal" image="upload33"/>
+                                                    <connections>
+                                                        <action selector="ElectricSubmission:" destination="mPn-mU-XcN" eventType="touchUpInside" id="htU-do-HOf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -3267,6 +3298,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <exit id="LlU-aI-WIp" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8V-JN-9Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1209" y="1252"/>
         </scene>
@@ -3394,7 +3427,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="3Up-OA-IYK">
-                                        <barButtonItem key="leftBarButtonItem" tag="1" image="F9D18C5D-DA82-4C86-8C38-01ADA504AB97" width="1" style="done" id="JIZ-od-4EQ"/>
+                                        <barButtonItem key="leftBarButtonItem" tag="1" image="8A0A68C7-8B12-41FE-ACFD-78D25BBF041E" width="1" style="done" id="JIZ-od-4EQ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -3442,32 +3475,39 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sit back. Relax. Discover hundreds of short stories, poems and musings on Tapestry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Cf-SJP">
-                                    <rect key="frame" x="-17" y="-18" width="427" height="85"/>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sit back. Relax. Discover hundreds of short stories, poems and musings on Tapestry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Cf-SJP">
+                                    <rect key="frame" x="13" y="12" width="230" height="85"/>
                                     <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="237" id="bbk-ba-6Gk"/>
+                                        <constraint firstAttribute="width" constant="230" id="bbk-ba-6Gk"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="11"/>
+                                    <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOJ-11-IL5">
-                                    <rect key="frame" x="37" y="110" width="181" height="33"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOJ-11-IL5">
+                                    <rect key="frame" x="79" y="85" width="98" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <state key="normal" title="Learn More"/>
+                                    <connections>
+                                        <segue destination="wWJ-D8-gRS" kind="showDetail" id="j3z-kw-Uud"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="bottom" secondItem="3Hq-0y-otw" secondAttribute="bottomMargin" id="0Kx-hj-LXc"/>
-                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="leading" secondItem="3Hq-0y-otw" secondAttribute="leadingMargin" id="5yK-FQ-wNO"/>
-                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="top" secondItem="3Hq-0y-otw" secondAttribute="topMargin" id="zPa-0h-vyx"/>
+                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="bottom" secondItem="3Hq-0y-otw" secondAttribute="bottomMargin" constant="-33" id="0Kx-hj-LXc"/>
+                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="leading" secondItem="3Hq-0y-otw" secondAttribute="leadingMargin" constant="5" id="5yK-FQ-wNO"/>
+                                <constraint firstItem="MOJ-11-IL5" firstAttribute="centerX" secondItem="oVw-Cf-SJP" secondAttribute="centerX" id="G7R-mp-P7o"/>
+                                <constraint firstItem="MOJ-11-IL5" firstAttribute="leading" secondItem="3Hq-0y-otw" secondAttribute="leading" constant="79" id="NOf-RG-1bK"/>
+                                <constraint firstAttribute="bottom" secondItem="MOJ-11-IL5" secondAttribute="bottom" constant="32" id="TCt-uH-1dm"/>
+                                <constraint firstItem="MOJ-11-IL5" firstAttribute="top" secondItem="3Hq-0y-otw" secondAttribute="top" constant="85" id="xjF-fG-eDn"/>
+                                <constraint firstItem="oVw-Cf-SJP" firstAttribute="top" secondItem="3Hq-0y-otw" secondAttribute="topMargin" constant="4" id="zPa-0h-vyx"/>
                             </constraints>
                         </view>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9In-8f-tp9">
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9In-8f-tp9">
                             <rect key="frame" x="0.0" y="213" width="600" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -3507,7 +3547,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRQ-Fg-mDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-501" y="-354"/>
+            <point key="canvasLocation" x="-780" y="-451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5tv-ox-4pB">
@@ -3517,7 +3557,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" shadowImage="BLUE FABRIC" backIndicatorImage="BLUE FABRIC" id="3lA-yx-9xj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.3332974910736084" green="0.46621960401535034" blue="0.91069513559341431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3649,7 +3689,7 @@
                                 <action selector="navigationHeaderButtonDidPressed:" destination="CxJ-Ni-joc" eventType="touchUpInside" id="HFf-4K-V5X"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" image="nav_settings" id="Cay-Oy-oZV">
+                        <barButtonItem key="rightBarButtonItem" image="book104" id="Cay-Oy-oZV">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="AuC-Vr-e5s" kind="presentation" id="2Sx-3I-Wh4"/>
@@ -3672,6 +3712,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ORt-6O-TKa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3698,29 +3739,147 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="URs-8e-CY9">
-                                <rect key="frame" x="34" y="0.0" width="533" height="600"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fab2" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-Oi-F5P">
+                                <rect key="frame" x="0.0" y="44" width="600" height="602"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tapestry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL9-Sh-lcD">
+                                <rect key="frame" x="26" y="79" width="287" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="I60-Tq-VKO"/>
+                                    <constraint firstAttribute="width" constant="287" id="NZa-SU-OXX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URs-8e-CY9">
+                                <rect key="frame" x="20" y="116" width="560" height="103"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Tapestry is a platform designed with writers, readers and publishers in mind. We want to bring content together so that those who love a good read can find the best authors and the best stories instantaneously. Tapestry is a front page for those who like to curl up and read a good book--but only have their smartphone handy. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCt-mF-ElU">
+                                <rect key="frame" x="20" y="255" width="560" height="67"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="YRm-6Z-icN"/>
+                                </constraints>
+                                <string key="text">If you are a publisher or web editor looking to add your publication to Tapestry, email me at phil@tapestry.com and I'll be more than happy to take your request. At the moment, we are limiting our content to literary publications.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publishers Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqd-Uo-O0d">
+                                <rect key="frame" x="26" y="212" width="287" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ave-fG-TdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toF-l1-6eH">
+                                <rect key="frame" x="20" y="336" width="287" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="HvS-qy-U9e"/>
+                                    <constraint firstAttribute="height" constant="35" id="MCH-QO-Tn0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQx-Bv-cav">
+                                <rect key="frame" x="20" y="371" width="560" height="106"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">We do not claim ownership nor host any of the content of the websites featured on Tapestry. Furthermore, our website curation is based on the availability of the content through RSS feeds, information that is publicly available. If you think that the app places your content in a bad light, please contact me at phil@tapestry.com and I will change it immediately</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Help us improve Tapestry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thD-Da-tx8">
+                                <rect key="frame" x="20" y="467" width="292" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="4Av-EQ-2cA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mM-eq-eUa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Tapestry is a platform designed with writers, readers and publishers in mind. We want to bring content together so that those who love a good read can find the best authors and the best stories instantaneously. Tapestry is a front page for those who like to curl up and read a good book--but only have their smartphone handy. We do not claim ownership  nor host any of the content of the websites featured on Tapestry. Furthermore, our website curation is based on the availability and relative exclusivity of the content. If you're interested in adding your site to Tapestry, we would be happy to do so. Simply contact me at phil@tapestry.com. </mutableString>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <items>
+                                    <navigationItem id="Jki-Qy-Hem">
+                                        <barButtonItem key="leftBarButtonItem" image="cancel" id="hef-Gm-fCy">
+                                            <connections>
+                                                <segue destination="Ssc-nj-09J" kind="unwind" unwindAction="unwindToFeedScreen:" id="SKF-Sd-FHF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackLineMenu" translatesAutoresizingMaskIntoConstraints="NO" id="E35-lJ-Gds">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W7-W0-1Im">
+                                <rect key="frame" x="20" y="512" width="560" height="80"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Tapestry is still in its infancy, and we will work tirelessly to unearth the best works published daily on the internet. If you have any feedback, please don't be afraid to send it our way. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="URs-8e-CY9" firstAttribute="centerX" secondItem="QzC-gv-6Wx" secondAttribute="centerX" id="irx-XU-f3t"/>
+                            <constraint firstItem="thD-Da-tx8" firstAttribute="leading" secondItem="HQx-Bv-cav" secondAttribute="leading" id="2Y4-H5-Yid"/>
+                            <constraint firstItem="Aqd-Uo-O0d" firstAttribute="trailing" secondItem="yL9-Sh-lcD" secondAttribute="trailing" id="4de-Ae-zd9"/>
+                            <constraint firstItem="thD-Da-tx8" firstAttribute="top" secondItem="toF-l1-6eH" secondAttribute="bottom" constant="88" id="6Lt-V1-OaV"/>
+                            <constraint firstItem="URs-8e-CY9" firstAttribute="trailing" secondItem="NCt-mF-ElU" secondAttribute="trailing" id="CCL-Yb-PHd"/>
+                            <constraint firstItem="NCt-mF-ElU" firstAttribute="leading" secondItem="toF-l1-6eH" secondAttribute="leading" id="Cyf-XG-eqn"/>
+                            <constraint firstItem="yL9-Sh-lcD" firstAttribute="leading" secondItem="QzC-gv-6Wx" secondAttribute="leadingMargin" constant="6" id="D25-eC-qKh"/>
+                            <constraint firstItem="4W7-W0-1Im" firstAttribute="top" secondItem="thD-Da-tx8" secondAttribute="bottom" constant="8" symbolic="YES" id="G9I-M7-WzT"/>
+                            <constraint firstItem="E35-lJ-Gds" firstAttribute="trailing" secondItem="7mM-eq-eUa" secondAttribute="trailing" id="H7w-Vb-z8d"/>
+                            <constraint firstItem="S1Q-Oi-F5P" firstAttribute="top" secondItem="eKj-pI-NyB" secondAttribute="bottom" constant="24" id="IxI-z0-Oxe"/>
+                            <constraint firstItem="NCt-mF-ElU" firstAttribute="leading" secondItem="QzC-gv-6Wx" secondAttribute="leadingMargin" id="LnZ-Cg-7Cc"/>
+                            <constraint firstItem="HQx-Bv-cav" firstAttribute="top" secondItem="toF-l1-6eH" secondAttribute="bottom" id="PhG-MP-NFq"/>
+                            <constraint firstItem="E35-lJ-Gds" firstAttribute="top" secondItem="QzC-gv-6Wx" secondAttribute="top" id="RDh-pW-MXI"/>
+                            <constraint firstItem="HQx-Bv-cav" firstAttribute="trailing" secondItem="4W7-W0-1Im" secondAttribute="trailing" id="SVs-16-7Iv"/>
+                            <constraint firstItem="7mM-eq-eUa" firstAttribute="leading" secondItem="S1Q-Oi-F5P" secondAttribute="leading" id="Tkm-An-KLZ"/>
+                            <constraint firstItem="URs-8e-CY9" firstAttribute="centerX" secondItem="7mM-eq-eUa" secondAttribute="centerX" id="WRP-vH-JAx"/>
+                            <constraint firstItem="7mM-eq-eUa" firstAttribute="top" secondItem="eKj-pI-NyB" secondAttribute="bottom" id="ZDg-4Z-DQC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="S1Q-Oi-F5P" secondAttribute="bottom" constant="-46" id="bJ4-aT-lN3"/>
+                            <constraint firstItem="E35-lJ-Gds" firstAttribute="leading" secondItem="7mM-eq-eUa" secondAttribute="leading" id="caO-tB-pJV"/>
+                            <constraint firstItem="4W7-W0-1Im" firstAttribute="leading" secondItem="thD-Da-tx8" secondAttribute="leading" id="dLq-fH-5e3"/>
+                            <constraint firstItem="7mM-eq-eUa" firstAttribute="trailing" secondItem="S1Q-Oi-F5P" secondAttribute="trailing" id="eDd-lE-EnS"/>
+                            <constraint firstAttribute="trailing" secondItem="7mM-eq-eUa" secondAttribute="trailing" id="fQQ-Mg-04L"/>
+                            <constraint firstItem="V3E-w6-ZUj" firstAttribute="top" secondItem="4W7-W0-1Im" secondAttribute="bottom" constant="10" id="hQu-Cv-H2M"/>
+                            <constraint firstItem="4W7-W0-1Im" firstAttribute="top" secondItem="HQx-Bv-cav" secondAttribute="bottom" constant="33" id="hxU-gb-Pr8"/>
+                            <constraint firstItem="URs-8e-CY9" firstAttribute="top" secondItem="7mM-eq-eUa" secondAttribute="bottom" constant="52" id="iCO-ci-G5d"/>
+                            <constraint firstItem="NCt-mF-ElU" firstAttribute="top" secondItem="URs-8e-CY9" secondAttribute="bottom" constant="44" id="iE6-fc-8WY"/>
+                            <constraint firstItem="NCt-mF-ElU" firstAttribute="leading" secondItem="URs-8e-CY9" secondAttribute="leading" id="kdh-aw-WJh"/>
+                            <constraint firstItem="yL9-Sh-lcD" firstAttribute="top" secondItem="7mM-eq-eUa" secondAttribute="bottom" constant="15" id="lVE-V0-TpF"/>
+                            <constraint firstItem="NCt-mF-ElU" firstAttribute="top" secondItem="Aqd-Uo-O0d" secondAttribute="bottom" id="m5t-nG-ei1"/>
+                            <constraint firstItem="HQx-Bv-cav" firstAttribute="trailing" secondItem="NCt-mF-ElU" secondAttribute="trailing" id="oQm-vi-LFc"/>
+                            <constraint firstItem="HQx-Bv-cav" firstAttribute="leading" secondItem="toF-l1-6eH" secondAttribute="leading" id="oeZ-RJ-ZVs"/>
+                            <constraint firstItem="Aqd-Uo-O0d" firstAttribute="top" secondItem="yL9-Sh-lcD" secondAttribute="bottom" constant="91" id="p2d-g8-AEi"/>
+                            <constraint firstItem="7mM-eq-eUa" firstAttribute="leading" secondItem="QzC-gv-6Wx" secondAttribute="leading" id="pXn-UX-HTN"/>
+                            <constraint firstItem="7mM-eq-eUa" firstAttribute="top" secondItem="E35-lJ-Gds" secondAttribute="bottom" id="wVA-48-Osu"/>
+                            <constraint firstItem="Aqd-Uo-O0d" firstAttribute="leading" secondItem="yL9-Sh-lcD" secondAttribute="leading" id="yGP-wt-dbY"/>
+                            <constraint firstItem="toF-l1-6eH" firstAttribute="top" secondItem="NCt-mF-ElU" secondAttribute="bottom" constant="14" id="zaf-pg-YGV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Twx-Ha-lVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ssc-nj-09J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="-354"/>
+            <point key="canvasLocation" x="35" y="-398"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BLUE FABRIC" width="642" height="102"/>
-        <image name="F9D18C5D-DA82-4C86-8C38-01ADA504AB97" width="15" height="15">
+        <image name="8A0A68C7-8B12-41FE-ACFD-78D25BBF041E" width="15" height="15">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -3786,14 +3945,16 @@ AMIA2QDbAN0NAw0IDRMNHA0vDTMNPg1HDUwNVA1XDVwNaw1vDXYNfg2LDZANkg2UDZkNoQ2kDakNsQ20
 DcYNyQ3OAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAADdA
 </mutableData>
         </image>
+        <image name="BLUE FABRIC" width="642" height="102"/>
+        <image name="BlackLineMenu" width="1900" height="98"/>
         <image name="Facebook" width="48" height="48"/>
         <image name="Twitter" width="48" height="48"/>
+        <image name="book104" width="21" height="21"/>
         <image name="cancel" width="15" height="15"/>
         <image name="diagonal-1" width="120" height="120"/>
         <image name="fab2" width="1218" height="780"/>
         <image name="hamburger_icon" width="30" height="21"/>
         <image name="loading-1" width="64" height="64"/>
-        <image name="nav_settings" width="40" height="40"/>
         <image name="shareme" width="406" height="399"/>
         <image name="upload33" width="64" height="64"/>
     </resources>

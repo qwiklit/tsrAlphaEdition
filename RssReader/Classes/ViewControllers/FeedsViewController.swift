@@ -110,42 +110,15 @@ class FeedsViewController: UITableViewController {
                                 // Sometimes, the default image is too small to display.
                                 // In this case, we will hide the thumbnail
                                 
-                                if image == nil || image.size.width < 120
+                                if image == nil || image.size.width < 80
                                   {
                                     
-                                       do {
-                                            
-                                            var random = arc4random_uniform(5)
-                                            switch(random){
-                                                
-                                            case 0: articleCell.headerImageView.image = UIImage(named: "placehold1")
-                                                break
-
-                                                
-                                            case 1: articleCell.headerImageView.image = UIImage(named: "placehold2")
-                                                break
-                                                
-                                            case 2: articleCell.headerImageView.image = UIImage (named: "placehold3")
-                                                break
-                                                
-                                            case 3: articleCell.headerImageView.image = UIImage (named: "placehold5")
-                                                break
-                                                
-                                            default: articleCell.headerImageView.image = UIImage (named: "placehold2")
-                                                break;
-                                                
-                                            }
-                                            
-                                        }
-                                    
-                                    //try else
-                                  if articleCell.imageViewConstraintWidth != nil {
                                     do {
                                         
-                                        var random = arc4random_uniform(5)
+                                        var random = arc4random_uniform(8)
                                         switch(random){
                                             
-                                        case 0: articleCell.headerImageView.image = UIImage(named: "placehold1")
+                                        case 0: articleCell.headerImageView.image = UIImage(named: "placehold6")
                                             break
                                             
                                             
@@ -158,7 +131,61 @@ class FeedsViewController: UITableViewController {
                                         case 3: articleCell.headerImageView.image = UIImage (named: "placehold5")
                                             break
                                             
-                                        default: articleCell.headerImageView.image = UIImage (named: "placehold2")
+                                        case 4: articleCell.headerImageView.image = UIImage(named: "placehold7")
+                                            break
+                                            
+                                        case 5: articleCell.headerImageView.image = UIImage(named: "placehold8")
+                                            break
+                                            
+                                        case 6: articleCell.headerImageView.image = UIImage (named: "placehold10")
+                                            break
+                                            
+                                        case 7: articleCell.headerImageView.image = UIImage (named: "placehold9")
+                                            break
+                                            
+                                            
+                                        default: articleCell.headerImageView.image = UIImage (named: "placehold8")
+                                        break;
+                                            
+                                            }
+                                            
+                                        }
+                                    
+                                    //try else
+                                  if articleCell.imageViewConstraintWidth != nil {
+                                    do {
+                                        
+                                        var random = arc4random_uniform(8)
+                                        switch(random){
+                                            
+                                        case 0: articleCell.headerImageView.image = UIImage(named: "placehold6")
+                                            break
+                                            
+                                            
+                                        case 1: articleCell.headerImageView.image = UIImage(named: "placehold2")
+                                            break
+                                            
+                                        case 2: articleCell.headerImageView.image = UIImage (named: "placehold3")
+                                            break
+                                            
+                                        case 3: articleCell.headerImageView.image = UIImage (named: "placehold5")
+                                            break
+                                            
+                                        case 4: articleCell.headerImageView.image = UIImage(named: "placehold7")
+                                            break
+                                            
+                                            
+                                        case 5: articleCell.headerImageView.image = UIImage(named: "placehold8")
+                                            break
+                                            
+                                        case 6: articleCell.headerImageView.image = UIImage (named: "placehold10")
+                                            break
+                                            
+                                        case 7: articleCell.headerImageView.image = UIImage (named: "placehold9")
+                                            break
+                                
+                                            
+                                        default: articleCell.headerImageView.image = UIImage (named: "placehold8")
                                         break;
                                             
                                         }
@@ -183,10 +210,10 @@ class FeedsViewController: UITableViewController {
                    if articleCell.headerImageView.image != nil {
                     do {
                         
-                        var random = arc4random_uniform(5)
+                        var random = arc4random_uniform(8)
                         switch(random){
                             
-                        case 0: articleCell.headerImageView.image = UIImage(named: "placehold1")
+                        case 0: articleCell.headerImageView.image = UIImage(named: "placehold6")
                             break
                             
                             
@@ -199,8 +226,23 @@ class FeedsViewController: UITableViewController {
                         case 3: articleCell.headerImageView.image = UIImage (named: "placehold5")
                             break
                             
-                        default: articleCell.headerImageView.image = UIImage (named: "placehold2")
+                        case 4: articleCell.headerImageView.image = UIImage(named: "placehold7")
+                            break
+                            
+                            
+                        case 5: articleCell.headerImageView.image = UIImage(named: "placehold8")
+                            break
+                            
+                        case 6: articleCell.headerImageView.image = UIImage (named: "placehold10")
+                            break
+                            
+                        case 7: articleCell.headerImageView.image = UIImage (named: "placehold9")
+                            break
+                            
+                            
+                        default: articleCell.headerImageView.image = UIImage (named: "placehold8")
                         break;
+
                             
                         }
                         
@@ -250,7 +292,7 @@ class FeedsViewController: UITableViewController {
         dropdownMenu.borderColor = UIColor.clearColor()
         dropdownMenu.textColor = UIColor.whiteColor()
         dropdownMenu.highlightedTextColor = UIColor.whiteColor()
-        dropdownMenu.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 18.0)
+        dropdownMenu.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 10.5)
         dropdownMenu.separatorHeight = 0
 
         // Uncomment if you want to use live blur

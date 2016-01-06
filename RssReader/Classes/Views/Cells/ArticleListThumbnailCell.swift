@@ -41,8 +41,8 @@ class ArticleListThumbnailCell: UITableViewCell {
         authorLabel.lineBreakMode = .ByWordWrapping
 
         if ConfigurationManager.defaultCellFont() != "default" {
-            titleLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 18.0)
-            authorLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 10.0)
+            titleLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 16.0)
+            authorLabel.font = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
         }
     }
 }
