@@ -355,7 +355,7 @@ class FeedsViewController: UITableViewController {
             navigationHeaderLabel = UILabel(frame: CGRectMake(0, 0, 200, 40))
             navigationHeaderLabel?.text = feedsURLs[0]["name"]!
             navigationHeaderLabel?.textAlignment = .Center
-            navigationHeaderLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 25.0)
+            navigationHeaderLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.0)
             switch ConfigurationManager.defaultTheme() {
                 case "dark":
                     navigationHeaderLabel?.textColor = UIColor.whiteColor()

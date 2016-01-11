@@ -88,7 +88,7 @@
 		EB0AC83E1C238C0800A58897 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		EB88B3DE1C2B1F620042C82B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F219FD0E1A21D2680028EF72 /* DropdownMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuItem.swift; path = ../DropdownMenuItem.swift; sourceTree = "<group>"; };
-		F25377191A1E149D008B1171 /* Tapestry .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tapestry .app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25377191A1E149D008B1171 /* Tapestry Story Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tapestry Story Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F253771D1A1E149D008B1171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F253771E1A1E149D008B1171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25377231A1E149D008B1171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		F253771A1A1E149D008B1171 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F25377191A1E149D008B1171 /* Tapestry .app */,
+				F25377191A1E149D008B1171 /* Tapestry Story Reader.app */,
 				F253772E1A1E149D008B1171 /* RssReaderTests.xctest */,
 			);
 			name = Products;
@@ -513,7 +513,7 @@
 			);
 			name = RssReader;
 			productName = RssReader;
-			productReference = F25377191A1E149D008B1171 /* Tapestry .app */;
+			productReference = F25377191A1E149D008B1171 /* Tapestry Story Reader.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F253772D1A1E149D008B1171 /* RssReaderTests */ = {
@@ -547,7 +547,7 @@
 				TargetAttributes = {
 					F25377181A1E149D008B1171 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = S33A3VBJQW;
+						DevelopmentTeam = BZ752V66T4;
 					};
 					F253772D1A1E149D008B1171 = {
 						CreatedOnToolsVersion = 6.1;
@@ -860,12 +860,12 @@
 				INFOPLIST_FILE = RssReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.storyreader;
-				PRODUCT_NAME = "Tapestry ";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.reader;
+				PRODUCT_NAME = "Tapestry Story Reader";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/RssReader-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RssReader/SupportingFiles/RssReader-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -874,8 +874,8 @@
 			baseConfigurationReference = 96BF58AB28FFAC8B75FF5A25 /* Pods-RssReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: philnicolasjames@gmail.com (Y7G6NY6YSJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: philnicolasjames@gmail.com (Y7G6NY6YSJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -894,11 +894,11 @@
 				INFOPLIST_FILE = RssReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.storyreader;
-				PRODUCT_NAME = "Tapestry ";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapestry.reader;
+				PRODUCT_NAME = "Tapestry Story Reader";
 				PROVISIONING_PROFILE = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RssReader/SupportingFiles/RssReader-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

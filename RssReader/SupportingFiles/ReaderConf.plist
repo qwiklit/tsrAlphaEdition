@@ -22,7 +22,7 @@
 			<key>name</key>
 			<string>Tapestry Home</string>
 			<key>url</key>
-			<string>http://mix.chimpfeedr.com/24306-TapestryDecember21</string>
+			<string>http://mix.chimpfeedr.com/f8cd9-Tapestry101MIX</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -534,6 +534,12 @@
 				<key>url</key>
 				<string>http://www.newyorker.com/feed/articles</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>The Virginia Quarterly Review</string>
+				<key>url</key>
+				<string>http://www.vqronline.org/rss.xml</string>
+			</dict>
 		</array>
 		<key>Science Fiction</key>
 		<array>
@@ -680,7 +686,7 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>The Guardian</string>
+				<string>The Guardian Books</string>
 				<key>url</key>
 				<string>http://www.theguardian.com/books/rss</string>
 			</dict>
