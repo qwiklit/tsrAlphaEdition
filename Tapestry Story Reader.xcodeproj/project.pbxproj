@@ -244,8 +244,8 @@
 				F25377411A1E432E008B1171 /* Classes */,
 				F253771E1A1E149D008B1171 /* AppDelegate.swift */,
 				F25377251A1E149D008B1171 /* Images.xcassets */,
-				F25377271A1E149D008B1171 /* LaunchScreen.xib */,
 				F253771C1A1E149D008B1171 /* Supporting Files */,
+				F25377271A1E149D008B1171 /* LaunchScreen.xib */,
 			);
 			name = "Tapestry Story Reader";
 			path = RssReader;

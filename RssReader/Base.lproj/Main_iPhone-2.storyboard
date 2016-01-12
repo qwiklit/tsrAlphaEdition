@@ -3427,7 +3427,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="3Up-OA-IYK">
-                                        <barButtonItem key="leftBarButtonItem" tag="1" image="505BD58D-6861-4214-ABC3-39D6760BC55D" width="1" style="done" id="JIZ-od-4EQ"/>
+                                        <barButtonItem key="leftBarButtonItem" tag="1" image="28393CDF-05BD-440D-AA76-0A5A9A31A0DE" width="1" style="done" id="JIZ-od-4EQ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -3879,7 +3879,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="505BD58D-6861-4214-ABC3-39D6760BC55D" width="15" height="15">
+        <image name="28393CDF-05BD-440D-AA76-0A5A9A31A0DE" width="15" height="15">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
