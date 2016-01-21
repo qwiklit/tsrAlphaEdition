@@ -180,6 +180,7 @@ class ArticleListViewController: UIViewController, UITableViewDelegate, UITableV
             if let authorName = article.authorName {
                 thumbnailCell.authorLabel.text = (authorName == "") ? "" : "BY \(authorName)".uppercaseString
             }
+                
             
             else {
  //             let authorName = nameFontTableTag
@@ -338,7 +339,6 @@ class ArticleListViewController: UIViewController, UITableViewDelegate, UITableV
 
         }
     }
-    
     
     override func viewDidLayoutSubviews() {
         updateHeaderView()
@@ -515,5 +515,7 @@ class ArticleListViewController: UIViewController, UITableViewDelegate, UITableV
         let indexSet = NSIndexSet(index: 0)
         tableView.reloadSections(indexSet, withRowAnimation: .Automatic)
     }
+    
+
 
 }

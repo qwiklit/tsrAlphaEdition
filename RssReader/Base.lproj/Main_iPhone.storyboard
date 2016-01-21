@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCB-tk-Ba4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCB-tk-Ba4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,14 +21,13 @@
         <!--Feeds View Controller-->
         <scene sceneID="o0c-IH-4yd">
             <objects>
-                <tableViewController id="0OD-rF-iXv" customClass="FeedsViewController" customModule="RssReader" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0OD-rF-iXv" customClass="FeedsViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="357" sectionHeaderHeight="1" sectionFooterHeight="22" id="oNc-OI-kcp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="586"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="FeedViewCell" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="ArticleViewCell" rowHeight="357" id="cYh-h8-y36" customClass="ArticleViewCell" customModule="RssReader" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="FeedViewCell" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="ArticleViewCell" rowHeight="357" id="cYh-h8-y36" customClass="ArticleViewCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="65" width="600" height="357"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cYh-h8-y36" id="ft6-WH-5eK">
@@ -37,14 +36,12 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Qby-DQ-3s4">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="252"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="252" id="90j-k0-BSB"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="title" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="584" translatesAutoresizingMaskIntoConstraints="NO" id="qO6-4g-rp4">
                                             <rect key="frame" x="8" y="286" width="584" height="21.5"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="FCM-gM-xP1"/>
                                             </constraints>
@@ -59,7 +56,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BY SIMON NG" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="93" translatesAutoresizingMaskIntoConstraints="NO" id="DRp-nV-eeA">
                                             <rect key="frame" x="499" y="315" width="93" height="28.5"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="dn0-r4-Z7f"/>
                                             </constraints>
@@ -69,7 +65,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TECH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="584" translatesAutoresizingMaskIntoConstraints="NO" id="l5u-wE-333">
                                             <rect key="frame" x="8" y="260" width="584" height="18"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="8nb-i6-WsG"/>
                                             </constraints>
@@ -79,7 +74,6 @@
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-ao-RrQ">
                                             <rect key="frame" x="8" y="315" width="10" height="29"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="cyj-G7-Sdv"/>
                                             </constraints>
@@ -89,7 +83,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8I-Zx-vvt">
                                             <rect key="frame" x="504" y="260" width="88" height="21"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="88" id="MED-c9-5Sn"/>
                                             </constraints>
@@ -99,7 +92,6 @@
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMENTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="82" translatesAutoresizingMaskIntoConstraints="NO" id="RwM-ri-MWz">
                                             <rect key="frame" x="26" y="315" width="82" height="28.5"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="82" id="pGA-vm-LVb"/>
                                             </constraints>
@@ -108,7 +100,6 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstItem="qO6-4g-rp4" firstAttribute="trailing" secondItem="ft6-WH-5eK" secondAttribute="trailingMargin" id="0XM-yV-lrk"/>
                                         <constraint firstItem="DRp-nV-eeA" firstAttribute="trailing" secondItem="ft6-WH-5eK" secondAttribute="trailingMargin" id="0cI-DX-sa6"/>
@@ -139,7 +130,6 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <outlet property="authorLabel" destination="DRp-nV-eeA" id="3mH-Ze-y0B"/>
                                     <outlet property="categoryLabel" destination="l5u-wE-333" id="vGs-jj-bjO"/>
@@ -169,7 +159,6 @@
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S8X-fa-YJR">
                             <rect key="frame" x="211" y="7" width="178" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <animations/>
                             <fontDescription key="fontDescription" name="Coustard" family="Coustard" pointSize="20"/>
                             <state key="normal" title="All Stories">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,11 +187,10 @@
         <!--Settings-->
         <scene sceneID="EOK-Zc-soA">
             <objects>
-                <tableViewController id="mPn-mU-XcN" customClass="SettingViewController" customModule="RssReader" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="mPn-mU-XcN" customClass="SettingViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="MqG-GK-PqL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection footerTitle="Thanks for using AppCoda Reader. Please send us feedback and let us know what you think about it." id="tLf-IR-rSc">
@@ -216,7 +204,6 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send us Feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-NP-wiR">
                                                     <rect key="frame" x="17" y="11" width="315" height="21"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="315" id="CpG-Kg-rw5"/>
                                                     </constraints>
@@ -225,14 +212,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="G9v-NP-wiR" firstAttribute="centerY" secondItem="12b-6g-lIq" secondAttribute="centerY" id="a6U-yh-5Nr"/>
                                                 <constraint firstItem="G9v-NP-wiR" firstAttribute="leading" secondItem="12b-6g-lIq" secondAttribute="leadingMargin" constant="9" id="axH-Dx-lDs"/>
                                                 <constraint firstItem="G9v-NP-wiR" firstAttribute="top" secondItem="12b-6g-lIq" secondAttribute="topMargin" constant="3" id="zVA-3N-ADD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -259,7 +244,7 @@
         <!--Detail-->
         <scene sceneID="Hu2-gl-0Bh">
             <objects>
-                <viewController title="Detail" id="TUo-X4-q94" customClass="DetailArticleViewController" customModule="RssReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="TUo-X4-q94" customClass="DetailArticleViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gFp-bp-UmV"/>
                         <viewControllerLayoutGuide type="bottom" id="9yV-5W-One"/>
@@ -270,20 +255,17 @@
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" suppressesIncrementalRendering="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0za-xI-f4h">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-1" translatesAutoresizingMaskIntoConstraints="NO" id="wPV-9s-Qok">
                                 <rect key="frame" x="283" y="275" width="35" height="35"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="Des-sv-60f"/>
                                     <constraint firstAttribute="height" constant="35" id="I2T-xm-VDg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="0za-xI-f4h" secondAttribute="bottom" constant="-14" id="IbZ-4K-baj"/>
@@ -322,7 +304,6 @@
                     <view key="view" contentMode="scaleToFill" id="UGO-cX-iga">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -337,11 +318,10 @@
         <!--Sidemenu-->
         <scene sceneID="CTJ-MC-Zah">
             <objects>
-                <tableViewController title="SideMenu" id="VzL-kB-LZQ" userLabel="Sidemenu" customClass="SideMenuViewController" customModule="RssReader" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="SideMenu" id="VzL-kB-LZQ" userLabel="Sidemenu" customClass="SideMenuViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RAH-rT-xqS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.86491871840000001" green="0.86491871840000001" blue="0.86491871840000001" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -351,13 +331,11 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APPCODA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Cf-SJP">
                                     <rect key="frame" x="14" y="15" width="145" height="21"/>
-                                    <animations/>
                                     <fontDescription key="fontDescription" name="Coustard" family="Coustard" pointSize="25"/>
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <animations/>
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Hyq-1f-eEg">
@@ -366,9 +344,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hyq-1f-eEg" id="3UZ-eM-RgQ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <inset key="separatorInset" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
@@ -395,7 +371,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3lA-yx-9xj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.29593048867867744" green="0.64081117159449463" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -420,7 +395,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ORt-6O-TKa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

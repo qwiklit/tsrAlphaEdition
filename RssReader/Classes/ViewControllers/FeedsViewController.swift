@@ -32,15 +32,16 @@ class FeedsViewController: UITableViewController {
            
             // Display article title
            articleCell.titleLabel.text = article.title
-           // articleCell.titleLabel.text = feed["name"]
+            
+       //     articleCell.titleLabel.text = feed["id"]
             //feedsURLs[0]["name"]!
 
             if let authorName = article.authorName {
                 articleCell.authorLabel.text = (authorName == "") ? "" : "BY \(authorName)".uppercaseString
             }
             
-          
-  //  articleCell.categoryLabel.text = feedsURLs[0]["name"]!
+        
+        
             
         
             // Display article date
@@ -533,6 +534,10 @@ class FeedsViewController: UITableViewController {
             UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Slide)
         }
     }
+   
+ 
+   
+
     
 
 }

@@ -107,11 +107,23 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Belle Reve </string>
+				<key>url</key>
+				<string>http://www.bellerevejournal.com/2/feed</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Augury Books</string>
 				<key>url</key>
 				<string>http://augurybooks.com/feed/</string>
 				<key>submit</key>
 				<string>https://augurybooks.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Berkeley Fiction Review</string>
+				<key>url</key>
+				<string>http://berkeleyfictionreview.com/feed/</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -157,6 +169,12 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Ducts.org</string>
+				<key>url</key>
+				<string>http://www.ducts.org/content/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>EcholocationMag</string>
 				<key>url</key>
 				<string>http://echolocationmag.com/?feed=rss2</string>
@@ -194,12 +212,6 @@
 				<string>http://feathertale.com/category/short-fiction/feed/</string>
 				<key>submit</key>
 				<string>http://feathertale.com/submissions/</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Fiction Southeast</string>
-				<key>url</key>
-				<string>http://fictionsoutheast.org/feed/</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -353,6 +365,12 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Rattle</string>
+				<key>url</key>
+				<string>http://www.rattle.com/poetry/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>Rusty Toque</string>
 				<key>url</key>
 				<string>http://therustytoque.tumblr.com/rss</string>
@@ -412,6 +430,12 @@
 				<string>http://www.triquarterly.org/rss.xml</string>
 				<key>submit</key>
 				<string>https://triquarterly.submittable.com/submit</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Two Serious Ladies</string>
+				<key>url</key>
+				<string>http://www.twoseriousladies.org/feed/</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -665,6 +689,12 @@
 				<string>Electric Literature</string>
 				<key>url</key>
 				<string>http://electricliterature.com/feed/</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fiction Writer&apos;s Review</string>
+				<key>url</key>
+				<string>http://fictionwritersreview.com/feed/</string>
 			</dict>
 			<dict>
 				<key>name</key>

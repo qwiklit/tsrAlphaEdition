@@ -1,46 +1,46 @@
  //
-//  FeedsService.swift
-//  RssReader
-//
-//  Created by AppCoda on 11/21/14.
-//  Copyright (c) 2014 AppCoda Limited. All rights reserved.
-//
-
-import UIKit
-
-// MARK: - RSS and ATOM tags
-private let rssChannelTag = "channel"
-private let atomChannelTag = "feed"
+ //  FeedsService.swift
+ //  RssReader
+ //
+ //  Created by AppCoda on 11/21/14.
+ //  Copyright (c) 2014 AppCoda Limited. All rights reserved.
+ //
  
-private let rssItemTag = "item"
-private let rssTitleTag = "title"
-private let rssLinkTag = "link"
-private let rssAuthorTag = "dc:creator"
-private let rssCategoryTag = "category"
-private let rssThumbnailTag = "media:thumbnail"
-private let rssMediaContentTag = "media:content"
-private let rssCommentsCountTag = "slash:comments"
-private let rssPubDateTag = "pubDate"
-private let rssDescriptionTag = "description"
-private let rssContentTag = "content:encoded"
-private let rssEnclosureTag = "enclosure"
-private let rssGuidTag = "guid"
+ import UIKit
  
-private let atomItemTag = "entry"
-private let atomTitleTag = "title"
-private let atomLinkTag = "link"
-private let atomAuthorTag = "author"
-private let atomAuthorNameTag = "name"
-private let atomCategoryTag = "category"
-private let atomThumbnailTag = "media:thumbnail"
-private let atomMediaContentTag = "media:content"
-private let atomCommentsCountTag = "slash:comments"
-private let atomPubDateTag = "published"
-private let atomContentTag = "content"
-
-// MARK: - Feed Types Enumeration
-
-enum FeedType: String {
+ // MARK: - RSS and ATOM tags
+ private let rssChannelTag = "channel"
+ private let atomChannelTag = "feed"
+ 
+ private let rssItemTag = "item"
+ private let rssTitleTag = "title"
+ private let rssLinkTag = "link"
+ private let rssAuthorTag = "dc:creator"
+ private let rssCategoryTag = "category"
+ private let rssThumbnailTag = "media:thumbnail"
+ private let rssMediaContentTag = "media:content"
+ private let rssCommentsCountTag = "slash:comments"
+ private let rssPubDateTag = "pubDate"
+ private let rssDescriptionTag = "description"
+ private let rssContentTag = "content:encoded"
+ private let rssEnclosureTag = "enclosure"
+ private let rssGuidTag = "guid"
+ 
+ private let atomItemTag = "entry"
+ private let atomTitleTag = "title"
+ private let atomLinkTag = "link"
+ private let atomAuthorTag = "author"
+ private let atomAuthorNameTag = "name"
+ private let atomCategoryTag = "category"
+ private let atomThumbnailTag = "media:thumbnail"
+ private let atomMediaContentTag = "media:content"
+ private let atomCommentsCountTag = "slash:comments"
+ private let atomPubDateTag = "published"
+ private let atomContentTag = "content"
+ 
+ // MARK: - Feed Types Enumeration
+ 
+ enum FeedType: String {
     case Unknown = "unknown"
     case Atom = "feed"
     case RSS1 = "rdf:RDF"
@@ -56,14 +56,14 @@ enum FeedType: String {
         
         return ""
     }
-}
+ }
  
-typealias FeedsServiceCompletionClosure = (articles: [Article]) -> ()
-typealias FeedsServiceFailureClosure = (error: NSError) -> ()
-
+ typealias FeedsServiceCompletionClosure = (articles: [Article]) -> ()
+ typealias FeedsServiceFailureClosure = (error: NSError) -> ()
+ 
  // MARK: -
-
-class FeedsService: NSObject, NSXMLParserDelegate {
+ 
+ class FeedsService: NSObject, NSXMLParserDelegate {
     // MARK: - FeedsService properties
     private var currentElement = ""
     private var title = ""
@@ -87,36 +87,36 @@ class FeedsService: NSObject, NSXMLParserDelegate {
     
     private var commentsCount = ""
     private var publicationDate = ""
-
+    
     override init() {
     }
-
+    
     // MARK: - Helper Methods
     
     func getFeedsWithURL(aUrlString: String, completion: FeedsServiceCompletionClosure!, failure: FeedsServiceFailureClosure!) -> Void {
-
+        
         self.completion = completion
         self.failure = failure
         
         let manager = AFHTTPRequestOperationManager()
         manager.requestSerializer.setValue("text/html", forHTTPHeaderField: "Content-Type")
         manager.responseSerializer = AFHTTPResponseSerializer()
-
+        
         manager.GET(aUrlString, parameters: nil, success: { (operation, response) -> Void in
             self.parser = NSXMLParser(data: response as! NSData)
             self.parser.delegate = self
             self.parser?.shouldResolveExternalEntities = true
             self.parser.parse()
-
-        }) { (operation, error) -> Void in
-            print(error)
-            UIAlertView(title: "Failed to retrieve the articles due to network error", message: error.localizedDescription, delegate: nil, cancelButtonTitle: "OK").show()
-            self.failure(error: error)
+            
+            }) { (operation, error) -> Void in
+                print(error)
+                UIAlertView(title: "Failed to retrieve the articles due to network error", message: error.localizedDescription, delegate: nil, cancelButtonTitle: "OK").show()
+                self.failure(error: error)
         }
         
     }
     
-     // MARK: - NSXMLParserDelegate Methods
+    // MARK: - NSXMLParserDelegate Methods
     
     func parserDidStartDocument(parser: NSXMLParser) {
         
@@ -130,24 +130,24 @@ class FeedsService: NSObject, NSXMLParserDelegate {
         
         // Determine the feed type
         switch elementName {
-            case FeedType.Atom.rawValue:
-                self.feedType = .Atom
-                return
+        case FeedType.Atom.rawValue:
+            self.feedType = .Atom
+            return
             
-            case FeedType.RSS1.rawValue:
-                self.feedType = .RSS1
-                return
+        case FeedType.RSS1.rawValue:
+            self.feedType = .RSS1
+            return
             
-            case FeedType.RSS1Alt.rawValue:
-                self.feedType = .RSS1
-                return
+        case FeedType.RSS1Alt.rawValue:
+            self.feedType = .RSS1
+            return
             
-            case FeedType.RSS2.rawValue:
-                self.feedType = .RSS2
-                return
+        case FeedType.RSS2.rawValue:
+            self.feedType = .RSS2
+            return
             
-            default:
-                break
+        default:
+            break
         }
         
         // Perform parsing based on the feed type
@@ -226,14 +226,14 @@ class FeedsService: NSObject, NSXMLParserDelegate {
     }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-
+        
         // Perform parsing based on the feed type
         if self.feedType == .RSS2 || self.feedType == .RSS1 || self.feedType == .RSS1Alt {
             parseRSSEndElement(elementName)
         } else if self.feedType == .Atom {
             parseAtomEndElement(elementName)
         }
-
+        
     }
     
     func parseRSSEndElement(elementName: String) {
@@ -304,11 +304,11 @@ class FeedsService: NSObject, NSXMLParserDelegate {
                     }
                 }
             }
-
+            
         }
         
     }
-
+    
     func parseAtomEndElement(elementName: String) {
         
         if elementName == atomItemTag {
@@ -328,11 +328,11 @@ class FeedsService: NSObject, NSXMLParserDelegate {
                     }
                 }
             }
-
+            
             isParsingItem = false
             isParsingAuthor = false
         }
-
+        
         if isParsingAuthor && elementName == atomAuthorNameTag {
             if let author = currentFeed?.authorName!.stringByConvertingHTMLToPlainText() {
                 currentFeed?.authorName! = author
@@ -359,10 +359,10 @@ class FeedsService: NSObject, NSXMLParserDelegate {
                 }
             }
         }
-    
-
+        
+        
     }
-
+    
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
         
@@ -372,7 +372,7 @@ class FeedsService: NSObject, NSXMLParserDelegate {
         } else if self.feedType == .Atom {
             parseAtomFoundCharacters(foundCharacters: string)
         }
-
+        
     }
     
     func parseRSSFoundCharacters(foundCharacters string: String?) {
@@ -414,30 +414,30 @@ class FeedsService: NSObject, NSXMLParserDelegate {
         
         if let currentString = string?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) {
             switch currentElement {
-                case atomTitleTag :
-                    currentFeed?.title! += currentString
-                case atomAuthorNameTag:
-                    currentFeed?.authorName! += currentString
-                case atomCategoryTag:
-                    let category = currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-                    if category != "" {
-                        currentFeed?.categories.append(category)
-                    }
-                case atomLinkTag:
-                    currentFeed?.link! += currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-                case atomCommentsCountTag:
-                    commentsCount += currentString
-                case atomPubDateTag:
-                    publicationDate += currentString
-                case atomContentTag:
-                    currentFeed?.rawDescription! += currentString
-                default:
-                    break;
+            case atomTitleTag :
+                currentFeed?.title! += currentString
+            case atomAuthorNameTag:
+                currentFeed?.authorName! += currentString
+            case atomCategoryTag:
+                let category = currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                if category != "" {
+                    currentFeed?.categories.append(category)
+                }
+            case atomLinkTag:
+                currentFeed?.link! += currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            case atomCommentsCountTag:
+                commentsCount += currentString
+            case atomPubDateTag:
+                publicationDate += currentString
+            case atomContentTag:
+                currentFeed?.rawDescription! += currentString
+            default:
+                break;
             }
         }
         
     }
-
+    
     func parserDidEndDocument(parser: NSXMLParser) {
         completion?(articles: feeds)
         
@@ -454,16 +454,16 @@ class FeedsService: NSObject, NSXMLParserDelegate {
             imagePath.rangeOfString(".jpeg", options: .CaseInsensitiveSearch) == nil ||
             imagePath.rangeOfString(".gif", options: .CaseInsensitiveSearch) == nil {
                 
-            return false
+                return false
         }
         
         return true
     }
     
-}
-
-
-
-
-
-
+ }
+ 
+ 
+ 
+ 
+ 
+ 

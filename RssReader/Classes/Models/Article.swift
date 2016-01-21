@@ -39,6 +39,8 @@ class Article {
     var favoritedAt: NSDate?
     var content: String? = ""
     var guid: String? = ""
+    var publicationTitle: String? = ""
+    
     
     init() {
 
