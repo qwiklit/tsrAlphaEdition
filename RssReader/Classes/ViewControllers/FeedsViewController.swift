@@ -32,22 +32,26 @@ class FeedsViewController: UITableViewController {
            
             // Display article title
            articleCell.titleLabel.text = article.title
+     //       articleCell.categoryLabel.text = article.categories.first?.uppercaseString
             
-       //     articleCell.titleLabel.text = feed["id"]
-            //feedsURLs[0]["name"]!
-
+            
             if let authorName = article.authorName {
-                articleCell.authorLabel.text = (authorName == "") ? "" : "BY \(authorName)".uppercaseString
+                articleCell.authorLabel.text = (authorName == "") ? "" : "by \(authorName) ".uppercaseString
+                
+            // display atom id for front page
+            articleCell.idLabel.text = article.id
             }
             
-        
-        
             
-        
+            
+           
+   //         if let websiteName = article.websiteName
+            
+                   
             // Display article date
    //         let dateFormatter = NSDateFormatter()
- //          dateFormatter.dateFormat = "MMM dd HH:mm"
- //          articleCell.dateTimeLabel.text = dateFormatter.stringFromDate(article.publicationDate)
+   //        dateFormatter.dateFormat = "MMM dd HH:mm"
+   //        articleCell.dateTimeLabel.text = dateFormatter.stringFromDate(article.publicationDate)
             
             // If the comment count is zero, hide the comment label
             if article.commentsCount != 0 {
@@ -111,7 +115,7 @@ class FeedsViewController: UITableViewController {
                                 // Sometimes, the default image is too small to display.
                                 // In this case, we will hide the thumbnail
                                 
-                                if image == nil || image.size.width < 80
+                                if image == nil || image.size.width < 50
                                   {
                                     
                                     do {
@@ -338,6 +342,8 @@ class FeedsViewController: UITableViewController {
         // Get the first feed in the list
         currentFeeds = (title: feedsURLs[0]["name"]!, url: feedsURLs[0]["url"]!)
         
+        
+        
        
         
         // Configure title label/dropdown menu depending on your settings
@@ -356,7 +362,7 @@ class FeedsViewController: UITableViewController {
             navigationHeaderLabel = UILabel(frame: CGRectMake(0, 0, 200, 40))
             navigationHeaderLabel?.text = feedsURLs[0]["name"]!
             navigationHeaderLabel?.textAlignment = .Center
-            navigationHeaderLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 16.0)
+            navigationHeaderLabel?.font = UIFont(name: ConfigurationManager.defaultBarFont(), size: 17.0)
             switch ConfigurationManager.defaultTheme() {
                 case "dark":
                     navigationHeaderLabel?.textColor = UIColor.whiteColor()
@@ -367,6 +373,9 @@ class FeedsViewController: UITableViewController {
             
             navigationItem.titleView = navigationHeaderLabel
         }
+        
+        //make the category label on the home page the url
+        
         
         // Configure the slide-out menu
         if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone {

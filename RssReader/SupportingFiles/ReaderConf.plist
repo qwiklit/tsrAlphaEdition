@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>News &amp; Reviews</string>
+			<string>News and Reviews</string>
 			<key>url</key>
 			<string>CategoryFeed</string>
 		</dict>
@@ -96,14 +96,6 @@
 				<string>http://atticusreview.org/feed/</string>
 				<key>submit</key>
 				<string>https://atticusbooks.submittable.com/submit</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Autumn Sky Daily Poetry</string>
-				<key>url</key>
-				<string>http://autumnskypoetrydaily.com/feed/</string>
-				<key>submit</key>
-				<string>http://autumnskypoetrydaily.com/submission-guidelines/</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -664,7 +656,7 @@
 				<string>http://www.thebeaverton.com/?format=feed&amp;type=rss</string>
 			</dict>
 		</array>
-		<key>News &amp; Reviews</key>
+		<key>News and Reviews</key>
 		<array>
 			<dict>
 				<key>name</key>

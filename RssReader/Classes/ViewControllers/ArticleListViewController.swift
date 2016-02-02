@@ -186,6 +186,13 @@ class ArticleListViewController: UIViewController, UITableViewDelegate, UITableV
  //             let authorName = nameFontTableTag
             }
             
+    //          if let id = article.id {
+            
+       // }
+        
+            
+        
+        
             if let articleImageURL = article.headerImageURL {
                 thumbnailCell.thumbnailImageViewConstraintHeight.constant = 110.0
                 thumbnailCell.thumbnailImageViewConstraintWidth.constant = 110.0
@@ -223,6 +230,8 @@ class ArticleListViewController: UIViewController, UITableViewDelegate, UITableV
                     if thumbnailCell.thumbnailImageViewConstraintWidth != nil {
                         thumbnailCell.thumbnailImageViewConstraintWidth.constant = 0.0
                     }
+                    
+               
                     
                 }
 

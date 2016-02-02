@@ -40,6 +40,7 @@ class Article {
     var content: String? = ""
     var guid: String? = ""
     var publicationTitle: String? = ""
+    var id: String? = ""
     
     
     init() {

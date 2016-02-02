@@ -26,7 +26,7 @@
         <!--Article Excerpt View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ArticleExcerptViewController" customModule="Tapestry_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ArticleExcerptViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,7 +38,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-ND-jrN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="kjn-Nb-oep" customClass="ArticleHeaderView" customModule="Tapestry_" customModuleProvider="target">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="kjn-Nb-oep" customClass="ArticleHeaderView" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -58,7 +58,7 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="70" id="1th-fc-USD" customClass="ArticleMetaViewCell" customModule="Tapestry_" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="70" id="1th-fc-USD" customClass="ArticleMetaViewCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="322" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1th-fc-USD" id="Hxa-8u-Mui">
@@ -92,7 +92,7 @@
                                             <outlet property="titleLabel" destination="nIR-WO-kMe" id="1fS-s0-ewZ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContentCell" rowHeight="281" id="mDs-I1-zZJ" customClass="ArticleTextLabelViewCell" customModule="Tapestry_" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContentCell" rowHeight="281" id="mDs-I1-zZJ" customClass="ArticleTextLabelViewCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="392" width="600" height="281"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mDs-I1-zZJ" id="Nya-l4-sn7">
@@ -236,7 +236,7 @@
         <!--Menu View Controller-->
         <scene sceneID="bdA-gC-Vyb">
             <objects>
-                <viewController id="V1g-Ru-I2n" customClass="MenuViewController" customModule="Tapestry_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="V1g-Ru-I2n" customClass="MenuViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iut-Vg-0NF"/>
                         <viewControllerLayoutGuide type="bottom" id="O5C-2U-wzr"/>
@@ -254,7 +254,7 @@
                                     <color key="backgroundColor" red="0.97254901960784312" green="0.87450980392156863" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" rowHeight="70" id="ezK-cf-vSz" customClass="CustomLabelTableViewCell" customModule="Tapestry_" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" rowHeight="70" id="ezK-cf-vSz" customClass="CustomLabelTableViewCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="102" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ezK-cf-vSz" id="SFV-0R-bYL">
@@ -340,7 +340,7 @@
         <!--Article List View Controller-->
         <scene sceneID="cbC-eZ-bBf">
             <objects>
-                <viewController id="Lck-g5-ZXb" customClass="ArticleListViewController" customModule="Tapestry_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lck-g5-ZXb" customClass="ArticleListViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MYP-4d-4hg"/>
                         <viewControllerLayoutGuide type="bottom" id="7Ey-fF-hPO"/>
@@ -352,7 +352,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-0W-ux5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="separatorColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="1ud-Tl-Lk8" customClass="ArticleListHeaderView" customModule="Tapestry_" customModuleProvider="target">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="1ud-Tl-Lk8" customClass="ArticleListHeaderView" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="342"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -406,7 +406,7 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThumbnailCell" rowHeight="138" id="rjZ-Fo-PnF" customClass="ArticleListThumbnailCell" customModule="Tapestry_" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThumbnailCell" rowHeight="138" id="rjZ-Fo-PnF" customClass="ArticleListThumbnailCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="364" width="600" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rjZ-Fo-PnF" id="dj5-uY-DHn">
@@ -453,7 +453,7 @@
                                             <outlet property="titleLabel" destination="YlZ-9Z-a0e" id="mFc-cR-Ize"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescriptionCell" rowHeight="138" id="tOA-Rx-eMa" customClass="ArticleListDescriptionCell" customModule="Tapestry_" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescriptionCell" rowHeight="138" id="tOA-Rx-eMa" customClass="ArticleListDescriptionCell" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="502" width="600" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOA-Rx-eMa" id="ygf-mT-Okg">
@@ -503,7 +503,7 @@
                                     <outlet property="delegate" destination="Lck-g5-ZXb" id="Zc6-F1-Jae"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Vb-aJX" customClass="ArticleListNavHeaderView" customModule="Tapestry_" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Vb-aJX" customClass="ArticleListNavHeaderView" customModule="Tapestry_Story_Reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj6-E4-SqD">
@@ -593,7 +593,7 @@
         <!--Detail-->
         <scene sceneID="kca-Kq-b2T">
             <objects>
-                <viewController title="Detail" id="bh4-ag-Yj5" customClass="DetailArticleViewController" customModule="Tapestry_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="bh4-ag-Yj5" customClass="DetailArticleViewController" customModule="Tapestry_Story_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ayi-gn-H3R"/>
                         <viewControllerLayoutGuide type="bottom" id="Iwq-a0-6OX"/>

@@ -59,6 +59,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        // TK Use this to put up pages on the sidebar
         // Return the number of rows in the section.
         if isSectionExpanded[section] {
             let category = feedsURLs[section]["name"]!

@@ -273,7 +273,7 @@ class DiscoverView: UITableViewController {
     }
     
     
-    @IBAction func CrazyHorseSubmission(sender: AnyObject) { if let url = NSURL(string: "http://https://carve.submittable.com/submit") {
+    @IBAction func CrazyHorseSubmission(sender: AnyObject) { if let url = NSURL(string: "https://crazyhorse.submittable.com/submit") {
         UIApplication.sharedApplication().openURL(url)
         }
     }
@@ -342,7 +342,7 @@ class DiscoverView: UITableViewController {
     }
     
     
-    @IBAction func EighteenbridgeURL(sender: AnyObject) {if let url = NSURL(string: "http://eighteenbridges.com/") {
+    @IBAction func EighteenbridgeURL(sender: AnyObject) {if let url = NSURL(string: "https://www.facebook.com/Eighteen-Bridges-Magazine-163719163650582/") {
         UIApplication.sharedApplication().openURL(url)
         }
         
@@ -375,7 +375,7 @@ class DiscoverView: UITableViewController {
         
     }
     
-    @IBAction func ElectricbridgeTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/ElectricLit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor") {
+    @IBAction func ElectricbridgeTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/ElectricLit") {
         UIApplication.sharedApplication().openURL(url)
         }
         
@@ -1192,7 +1192,7 @@ class DiscoverView: UITableViewController {
         
     }
     
-    @IBAction func TheWalrusTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/search?q=the%20walrus&src=tyah") {
+    @IBAction func TheWalrusTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/walrusmagazine") {
         UIApplication.sharedApplication().openURL(url)
         }
         
@@ -1246,7 +1246,7 @@ class DiscoverView: UITableViewController {
         
     }
     
-    @IBAction func WordsWithoutBordersTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/wwborders?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor") {
+    @IBAction func WordsWithoutBordersTwitter(sender: AnyObject) {if let url = NSURL(string: "https://twitter.com/wwborders") {
         UIApplication.sharedApplication().openURL(url)
         }
         
@@ -1267,7 +1267,7 @@ class DiscoverView: UITableViewController {
     }
     
     
-    @IBAction func WritersAlmanacURL(sender: AnyObject) {if let url = NSURL(string: "http://writersalmanac.org//") {
+    @IBAction func WritersAlmanacURL(sender: AnyObject) {if let url = NSURL(string: "http://writersalmanac.org/") {
         UIApplication.sharedApplication().openURL(url)
         }
         

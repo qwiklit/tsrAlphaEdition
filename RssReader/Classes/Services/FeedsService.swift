@@ -25,6 +25,8 @@
  private let rssContentTag = "content:encoded"
  private let rssEnclosureTag = "enclosure"
  private let rssGuidTag = "guid"
+ private let rssIdTag = "id"
+
  
  private let atomItemTag = "entry"
  private let atomTitleTag = "title"
@@ -37,6 +39,7 @@
  private let atomCommentsCountTag = "slash:comments"
  private let atomPubDateTag = "published"
  private let atomContentTag = "content"
+ private let atomWebsiteTag = "id"
  
  // MARK: - Feed Types Enumeration
  
@@ -212,11 +215,13 @@
             mediaContentImageURL = ""
             isParsingItem = true
         }
+
+ //changed "link" to "id", may cause errors.
         
         if isParsingItem {
             if currentElement == atomLinkTag {
                 let url = attributeDict["href"] as! String
-                currentFeed?.link = url
+                currentFeed?.id = url
             }
             
             if currentElement == atomAuthorTag {
@@ -355,12 +360,15 @@
                     if let html = currentFeed?.rawDescription {
                         currentFeed?.headerImageURL = html.parseFirstImage()
                         descriptionImageURL = html.parseFirstImage()!
-                    }
-                }
-            }
-        }
-        
-        
+             }
+         }
+                
+ //       if currentElement == atomWebsiteTag {
+   //         let websiteName = currentFeed?.id?.stringByConvertingHTMLToPlainText()
+                
+    //       }
+             }
+         }
     }
     
     
@@ -399,6 +407,8 @@
                 currentFeed?.content! += currentString
             case rssGuidTag:
                 currentFeed?.guid! += currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            case rssIdTag:
+                currentFeed?.content! += currentString
             default:
                 break;
                 
@@ -431,6 +441,8 @@
                 publicationDate += currentString
             case atomContentTag:
                 currentFeed?.rawDescription! += currentString
+            case atomWebsiteTag:
+                currentFeed?.id! += currentString
             default:
                 break;
             }

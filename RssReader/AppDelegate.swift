@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     
                 }
                 
+                //TKfont
                 // Configure the default fonts
                 UILabel.appearance().font = ConfigurationManager.defaultCellFont() != "default" ? UIFont(name: "Varela-Regular", size: 12.5) : UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.5)
             }
