@@ -44,7 +44,7 @@ class ArticleViewCell: UITableViewCell {
   //          categoryLabel.font  = UIFont(name: ConfigurationManager.defaultCellFont(), size: 10.0)
  //          dateTimeLabel.font  = UIFont(name: ConfigurationManager.defaultCellFont(), size: 12.0)
             descriptionLabel?.font  = UIFont(name: ConfigurationManager.defaultBarFont(), size: 14.0)
-  //         urlLabel?.font  = UIFont(name: ConfigurationManager.defaultBarFont(), size: 14.0)
+           idLabel?.font  = UIFont(name: ConfigurationManager.defaultBarFont(), size: 14.0)
         } else {
             titleLabel.font = UIFont(name: "Coustard", size: 15.0)
             authorLabel.font  = UIFont(name: "Raleway", size: 13.0)

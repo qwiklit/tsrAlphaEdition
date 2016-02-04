@@ -32,15 +32,328 @@ class FeedsViewController: UITableViewController {
            
             // Display article title
            articleCell.titleLabel.text = article.title
+            
+            // display atom id for front page
+            
+           articleCell.idLabel.text = article.id
+            
+    
+            
+    //Change the ID of web URL to something presentable and legible
+            
+            
+           
+            
+          if articleCell.idLabel.text!.lowercaseString.rangeOfString("electricliterature") != nil {
+                articleCell.idLabel.text = "Electric Literature"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("anthill") != nil {
+                articleCell.idLabel.text = "The Anthill"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("quaint") != nil {
+                articleCell.idLabel.text = "Quaint Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("atticus") != nil {
+                articleCell.idLabel.text = "Atticus Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("deadmule") != nil {
+                articleCell.idLabel.text = "Dead Mule"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("eighteen") != nil {
+                articleCell.idLabel.text = "EighteenBridges"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("geist") != nil {
+                articleCell.idLabel.text = "Geist"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("hazlitt") != nil {
+                articleCell.idLabel.text = "Hazlitt"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("purplepassion") != nil {
+                articleCell.idLabel.text = "Purple Passion Press"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("offing") != nil {
+                articleCell.idLabel.text = "The Offing Mag"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("poeticentanglement") != nil {
+                articleCell.idLabel.text = "Poetic Entaglement"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("McSweeney") != nil {
+                articleCell.idLabel.text = "McSweeneys"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("feathertale") != nil {
+                articleCell.idLabel.text = "Feathertale"
+            }
+            
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("necessaryfiction") != nil {
+                articleCell.idLabel.text = "Necessary Fiction"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("masters") != nil {
+                articleCell.idLabel.text = "Master's Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("bisonjack") != nil {
+                articleCell.idLabel.text = "The Journal of Bison Jack"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("queenmobs") != nil {
+                articleCell.idLabel.text = "Queen Mob's"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("3am") != nil {
+                articleCell.idLabel.text = "3am Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("buenosaires") != nil {
+                articleCell.idLabel.text = "The Buenos Aires Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("geist") != nil {
+                articleCell.idLabel.text = "Geist"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("augury") != nil {
+                articleCell.idLabel.text = "Augury Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("carvezine") != nil {
+                articleCell.idLabel.text = "Carve Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("americanshortfiction") != nil {
+                articleCell.idLabel.text = "American Short Fiction"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("publicbooks") != nil {
+                articleCell.idLabel.text = "Public Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("pshares") != nil {
+                articleCell.idLabel.text = "Ploughshares"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("thewalrus") != nil {
+                articleCell.idLabel.text = "The Walrus"
+            }
+            
+            
+
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("theamericanreader") != nil {
+                articleCell.idLabel.text = "The American Reader"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("theparisreview") != nil {
+                articleCell.idLabel.text = "The Paris Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("newyorker") != nil {
+                articleCell.idLabel.text = "The New Yorker"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("rustytoque") != nil {
+                articleCell.idLabel.text = "The Rusty Toque"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("poetryisdead") != nil {
+                articleCell.idLabel.text = "Poetry is Dead"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("tor.com") != nil {
+                articleCell.idLabel.text = "Tor Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("escapepod") != nil {
+                articleCell.idLabel.text = "Escape Pod"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("lightspeed") != nil {
+                articleCell.idLabel.text = "Lightspeed Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("apex-mag") != nil {
+                articleCell.idLabel.text = "Apex Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("shortfictionbreak") != nil {
+                articleCell.idLabel.text = "Short Fiction Break"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("AutumnSkyPoetryDaily") != nil {
+                articleCell.idLabel.text = "Autumn Sky Poetry Daily"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("nereview") != nil {
+                articleCell.idLabel.text = "Northeast Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("writersalmanac") != nil {
+                articleCell.idLabel.text = "Writer's Almanac"
+            }
+            
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("shenandoah") != nil {
+                articleCell.idLabel.text = "Shenandoah"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("triquarterly") != nil {
+                articleCell.idLabel.text = "triquarterly"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("thesunmag") != nil {
+                articleCell.idLabel.text = "The Sun Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("blackmountain") != nil {
+                articleCell.idLabel.text = "witnessmagazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("thebarking") != nil {
+                articleCell.idLabel.text = "The Barking Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("idahoreview") != nil {
+                articleCell.idLabel.text = "The Idaho Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("americanscholar") != nil {
+                articleCell.idLabel.text = "The American Scholar"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("chelseastation") != nil {
+                articleCell.idLabel.text = "Chelsea Station"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("pen.org") != nil {
+                articleCell.idLabel.text = "PEN"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("krblog") != nil {
+                articleCell.idLabel.text = "The Kenyon Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("narrativemag") != nil {
+                articleCell.idLabel.text = "Narrative Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("kirkus") != nil {
+                articleCell.idLabel.text = "Kirkus Reviews"
+            }
+            
+            
+            //News
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("galleycat") != nil {
+                articleCell.idLabel.text = "Galleycat"
+            }
+            
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("lrb.co.uk") != nil {
+                articleCell.idLabel.text = "The London Review of Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("npr.org") != nil {
+                articleCell.idLabel.text = "NPR"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("omnivoracious") != nil {
+                articleCell.idLabel.text = "Omnivoracious"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("themillions") != nil {
+                articleCell.idLabel.text = "The Millions"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("latimes") != nil {
+                articleCell.idLabel.text = "The Los Angeles Times Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("lithub") != nil {
+                articleCell.idLabel.text = "Lithub"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("bookriot") != nil {
+                articleCell.idLabel.text = "Book Riot"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("nymag") != nil {
+                articleCell.idLabel.text = "New York Magazine"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("nybooks") != nil {
+                articleCell.idLabel.text = "NY Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("globeandmail") != nil {
+                articleCell.idLabel.text = "Globe and Mail Books"
+            }
+            
+            
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("worldliteraturetoday") != nil {
+                articleCell.idLabel.text = "World Literature Today"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("theguardian") != nil {
+                articleCell.idLabel.text = "The Guardian Books"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("flavorwire") != nil {
+                articleCell.idLabel.text = "Flavorwire"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("nytimes") != nil {
+                articleCell.idLabel.text = "New York Times"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("wwborders") != nil {
+                articleCell.idLabel.text = "Words Without Borders"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("made-up-words") != nil {
+                articleCell.idLabel.text = "Made Up Words"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("wordhaus") != nil {
+                articleCell.idLabel.text = "Wordhaus"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("vqronline") != nil {
+                articleCell.idLabel.text = "The Virginia Quarterly Review"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("rattle") != nil {
+                articleCell.idLabel.text = "Rattle"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("ducts.org") != nil {
+                articleCell.idLabel.text = "Ducts.org"
+            }
+        
+            
      //       articleCell.categoryLabel.text = article.categories.first?.uppercaseString
             
             
             if let authorName = article.authorName {
                 articleCell.authorLabel.text = (authorName == "") ? "" : "by \(authorName) ".uppercaseString
-                
-            // display atom id for front page
-            articleCell.idLabel.text = article.id
+             
+            
             }
+            
+            
             
             
             
@@ -535,6 +848,9 @@ class FeedsViewController: UITableViewController {
                     destinationViewController.transitioningDelegate = slideUpTransitionAnimator
                 }
             }
+          
+            
+            
         }
     }
     
@@ -544,9 +860,6 @@ class FeedsViewController: UITableViewController {
         }
     }
    
- 
-   
-
     
 
 }

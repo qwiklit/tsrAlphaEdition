@@ -40,7 +40,7 @@ class DetailArticleViewController: UIViewController, UIWebViewDelegate, UIScroll
         // Load the web content
         self.webView.delegate = self
         self.webView.scrollView.delegate = self
-        if var articlelink = article?.link {
+        if var articlelink = article?.id {
             
             // In case the link is missing, we use the GUID instead
             if articlelink == "" {

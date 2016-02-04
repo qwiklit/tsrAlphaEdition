@@ -30,7 +30,7 @@
  
  private let atomItemTag = "entry"
  private let atomTitleTag = "title"
- private let atomLinkTag = "link"
+ private let atomLinkTag = "id"
  private let atomAuthorTag = "author"
  private let atomAuthorNameTag = "name"
  private let atomCategoryTag = "category"
@@ -214,21 +214,34 @@
             thumbnailImageURL = ""
             mediaContentImageURL = ""
             isParsingItem = true
-        }
+ //       }
 
  //changed "link" to "id", may cause errors.
         
-        if isParsingItem {
-            if currentElement == atomLinkTag {
-                let url = attributeDict["href"] as! String
-                currentFeed?.id = url
-            }
+//        if isParsingItem {
+ //           if currentElement == atomLinkTag {
+ //               let url = attributeDict["href"] as! String
+ //               currentFeed?.id = url
+ //           }
             
             if currentElement == atomAuthorTag {
                 isParsingAuthor = true
+              
+            }
+            
+            if currentElement == atomLinkTag {
+     //TKEDITURL
+                
             }
         }
+        
+        // Swift 2
+      
+        
+        
     }
+    
+    
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
@@ -434,7 +447,7 @@
                     currentFeed?.categories.append(category)
                 }
             case atomLinkTag:
-                currentFeed?.link! += currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                currentFeed?.id! += currentString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             case atomCommentsCountTag:
                 commentsCount += currentString
             case atomPubDateTag:
