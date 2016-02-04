@@ -89,11 +89,11 @@ extension String {
         while let range = htmlString.rangeOfString("<[^>]+>", options: .RegularExpressionSearch) {
             htmlString = htmlString.stringByReplacingCharactersInRange(range, withString: "")
         }
-
+        
         // Remove redundant newline characters
         let regex = try? NSRegularExpression(pattern: "(\n){3,}", options: [])
         decodedString = regex?.stringByReplacingMatchesInString(htmlString, options: [], range: NSMakeRange(0, htmlString.characters.count), withTemplate: "\n\n")
-
+        
         // Remove all percentage escapes
         if let escapedString = decodedString?.stringByRemovingPercentEncoding {
             decodedString = escapedString
@@ -122,7 +122,7 @@ extension String {
         // Use our own font for rendering the web page
         let textFont = [NSFontAttributeName: UIFont(name: "Lato-Regular", size: 18.0)!]
         let boldFont = [NSFontAttributeName: UIFont(name: "Lato-Bold", size: 18.0)!]
-
+        
         // Strip off all HTML tags except H1, H2, H3, A, IMG and STRONG
         while let range = htmlString.rangeOfString("<(?!strong|/strong|h1|/h1|h2|/h2|h3|/h3|a|/a|img|/img)[^>]+>", options: .RegularExpressionSearch) {
             htmlString = htmlString.stringByReplacingCharactersInRange(range, withString: "")
@@ -144,7 +144,7 @@ extension String {
         }
         
         let attributedHTMLString = NSMutableAttributedString(string: htmlString, attributes: textFont)
-
+        
         // Format the H1, H2, H3 and STRONG tags
         // Backup regex: (<strong.*>(.*?)</strong>|<h[1234].?>(?:<strong>){0,1}(.*?)(?:</strong>){0,1}</h[1234]>)
         if let boldTextRegEx = try? NSRegularExpression(pattern: "(<strong.*>(.*?)</strong>|<h[1234][^>]*>(?:<strong>){0,1}(.*?)(?:</strong>){0,1}</h[1234]>)", options: .CaseInsensitive) {
@@ -178,7 +178,7 @@ extension String {
         // Extract the image source and download the image
         if let imgRegEx = try? NSRegularExpression(pattern: "<img.+?src=[\"'](.+?)[\"'].*?>", options: .CaseInsensitive) {
             let results = imgRegEx.matchesInString(htmlString, options: [], range: NSMakeRange(0, htmlString.characters.count))
-
+            
             for (index, match) in results.enumerate() {
                 var imageSource = (htmlString as NSString).substringWithRange(match.rangeAtIndex(1)) as String
                 
@@ -186,21 +186,21 @@ extension String {
                 let imageCache = CacheManager.sharedCacheManager().cache
                 if let cachedImage = imageCache.objectForKey(imageSource) as? UIImage {
                     print("Get image from cache: \(imageSource)")
-
+                    
                     let imageAttachment = ImageAttachment()
                     imageAttachment.image = cachedImage
                     imageAttachment.imageURL = imageSource
                     let attrStringWithImage = NSAttributedString(attachment: imageAttachment)
                     attributedHTMLString.insertAttributedString(attrStringWithImage, atIndex: match.rangeAtIndex(0).location + index)
-                
+                    
                 } else {
-
+                    
                     // Some URLs are encoded with "&amp;". Need to replace it with the actual "&"
                     imageSource = imageSource.stringByReplacingOccurrencesOfString("&amp;", withString: "&")
-
+                    
                     // Otherwise, we download the image from the source
                     if let imageURL = NSURL(string: imageSource.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!) {
-
+                        
                         let imageAttachment = ImageAttachment()
                         imageAttachment.image = UIImage()
                         imageAttachment.imageURL = imageURL.absoluteString
@@ -212,7 +212,7 @@ extension String {
                             if error == nil {
                                 if let image = UIImage(data: data!) {
                                     imageAttachment.image = image
-//                                    print("Caching image: \(imageSource)")
+                                    //                                    print("Caching image: \(imageSource)")
                                     imageCache.setObject(image, forKey: imageSource)
                                     
                                     attributedHTMLString.enumerateAttribute(NSAttachmentAttributeName, inRange: NSMakeRange(0, attributedHTMLString.length), options: [], usingBlock: {(value, range, stop) -> Void in
@@ -225,17 +225,17 @@ extension String {
                                         }
                                     })
                                 }
-
+                                
                             } else {
                                 print("Failed to download image: \(error!.localizedDescription)")
                             }
-
+                            
                         }).resume()
                     }
                 }
             }
         }
-
+        
         // Remove the rest of HTML tags
         attributedHTMLString.replaceAllStrings("</(h1|h2|h3)>", replacement: "\n")
         attributedHTMLString.removeHTMLTags()
@@ -257,7 +257,7 @@ extension String {
                 htmlString = htmlString.stringByReplacingOccurrencesOfString(encodedEntity, withString: decodedEntity)
             }
         }
-
+        
         // Check if the given string contains an image
         // If it's not found, we just return an empty string
         if htmlString.rangeOfString("<img", options: .CaseInsensitiveSearch) == nil {
@@ -292,14 +292,14 @@ extension String {
         let index = self.startIndex.advancedBy(length)
         return self.substringToIndex(index)
     }
-
+    
     // Scan the possible featured photo of an article in the give HTML string
     private func scanImage(htmlString: String) -> String? {
         var htmlString = htmlString
         var htmlScanner = NSScanner(string: htmlString)
         var imageSrc: NSString?
         var imageURL:String?
-
+        
         
         // Set the scanner to case insensitive
         htmlScanner.caseSensitive = false
@@ -310,7 +310,7 @@ extension String {
         let featuredTag = (htmlString as NSString).rangeOfString("<figure")
         if featuredTag.location != NSNotFound {
             let html = (htmlString as NSString).substringFromIndex(featuredTag.location)
-
+            
             // Even if we find the <figure> tag, it may not contain an image
             // This is why we first check if it contains the <img> tag
             isFeaturedPhotoFound = html.contains("<img")
@@ -320,28 +320,28 @@ extension String {
                 htmlString = html
             }
         }
-
+        
         htmlScanner.scanUpToString("<img", intoString: nil)
         
         if htmlScanner.scanLocation < htmlString.characters.count {
             htmlScanner.scanUpToString("src=", intoString: nil)
             htmlScanner.scanLocation += 5
             if htmlScanner.scanLocation < htmlString.characters.count {
-//                let index = htmlString.startIndex.advancedBy(htmlScanner.scanLocation - 1)
-//                htmlScanner.scanUpToString("\(htmlString[index])", intoString: &imageSrc)
+                //                let index = htmlString.startIndex.advancedBy(htmlScanner.scanLocation - 1)
+                //                htmlScanner.scanUpToString("\(htmlString[index])", intoString: &imageSrc)
                 htmlScanner.scanUpToString("\"", intoString: &imageSrc)
                 if (imageSrc?.rangeOfString("http://").location != NSNotFound ||
                     imageSrc?.rangeOfString("https://").location != NSNotFound ||
                     imageSrc?.rangeOfString("//").location != NSNotFound ) &&
                     imageSrc?.length > 7 {
                         imageURL = imageSrc! as String
-
+                        
                         // Some image links do not start with HTTP
                         // So, we need to add it manually
                         if imageURL?.truncate(4).lowercaseString != "http" {
                             imageURL = "http:\(imageURL)"
                         }
-    
+                        
                 }
             }
         }

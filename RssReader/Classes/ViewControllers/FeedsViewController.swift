@@ -150,7 +150,15 @@ class FeedsViewController: UITableViewController {
             }
             
             
-
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("theawl") != nil {
+                articleCell.idLabel.text = "The Awl"
+            }
+            
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("harpers") != nil {
+                articleCell.idLabel.text = "Harper's"
+            }
+            
             
             if articleCell.idLabel.text!.lowercaseString.rangeOfString("theamericanreader") != nil {
                 articleCell.idLabel.text = "The American Reader"
@@ -192,7 +200,7 @@ class FeedsViewController: UITableViewController {
                 articleCell.idLabel.text = "Short Fiction Break"
             }
             
-            if articleCell.idLabel.text!.lowercaseString.rangeOfString("AutumnSkyPoetryDaily") != nil {
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("autumnSky") != nil {
                 articleCell.idLabel.text = "Autumn Sky Poetry Daily"
             }
             
@@ -323,7 +331,7 @@ class FeedsViewController: UITableViewController {
                 articleCell.idLabel.text = "Words Without Borders"
             }
             
-            if articleCell.idLabel.text!.lowercaseString.rangeOfString("made-up-words") != nil {
+            if articleCell.idLabel.text!.lowercaseString.rangeOfString("medium.com") != nil {
                 articleCell.idLabel.text = "Made Up Words"
             }
             
